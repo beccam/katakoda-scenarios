@@ -6,6 +6,6 @@ session.execute("""
     (lastname, age, city, email, firstname)
      VALUES (%s,%s,%s,%s,%s)"
     """,
-    ("Jones", 35, "Austin", "bob@example.com, "Bob")
+    ("Jones", 35, "Austin", "bob@example.com", "Bob")
 )
 ```{{execute}}
