@@ -4,7 +4,7 @@ Say the user has had a birthday and we want to update their age. We will use the
 session.execute("""
     UPDATE demo.users SET age =%s WHERE lastname = %s
     """, 
-    [26, "Jones"])
+    [36, "Jones"])
 ```{{execute}}    
     
 After, we select the user's information back out to see if the update worked.
