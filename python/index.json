@@ -1,8 +1,8 @@
 {
-  "title": "Drivers",
+  "title": "Try out the DataStax Python Driver",
   "description": "",
   "difficulty": "Beginner",
-  "time": "10 - 15 minutes",
+  "time": "5 - 10 minutes",
   "details": {
     "assets": {
         "host01": [
