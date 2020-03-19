@@ -35,7 +35,7 @@
   },
   "files": [
         "quickstart.py"
-    ],
+  ],
   "environment": {
     "uilayout": "editor-terminal"
     "uisettings": "python"
