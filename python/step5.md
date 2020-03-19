@@ -2,7 +2,7 @@ Using `session.execute()`, we will retrieve our user we just inserted back out o
 
 ```
 result = session.execute("SELECT * FROM demo.users WHERE lastname = %s", ["Jones"]).one()
-print (result.firstname, result.age)
+print(result.firstname, result.age)
 ``` {{execute}}
     
 
