@@ -1,3 +1,3 @@
 #!/bin/bash
-alias python=python3
+alias python=python2
 sleep 2; wait.sh
