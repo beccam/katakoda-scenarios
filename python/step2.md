@@ -9,5 +9,7 @@ cluster = Cluster(protocol_version = 3)
 
 Instantiating a Cluster does not actually connect us to any nodes. To establish connections and begin executing queries we need a `Session`, which is created by calling `Cluster.connect()`:
 
-`session = cluster.connect('demo')`{{execute}}
+```
+session = cluster.connect('demo')
+```{{execute}}
 
