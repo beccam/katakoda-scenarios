@@ -37,7 +37,7 @@
         "quickstart.py"
   ],
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
     "uisettings": "python"
   },
   "backend": {
