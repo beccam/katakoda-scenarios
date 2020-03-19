@@ -7,8 +7,6 @@
     "assets": {
         "host01": [
             {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-            {"file": "videos.csv", "target": "/root/data-files/"},
-            {"file": "videos-by-tag.csv", "target": "/root/data-files/"}
         ]
     },
     "steps": [
