@@ -1,18 +1,18 @@
-Retrieve the new row from the table.
-
-<details>
-  <summary>Solution</summary>
+Say the user has had a birthday and we want to update their age. We will use the `session.execute()` method to perform and UPDATE on that row.
 
 ```
-rs = session.execute("""
-    SELECT *
-    FROM videos_by_tag 
-    WHERE tag = 'CQL' AND
-          added_date = '2020-03-18' AND
-          video_id = 40e70800-2c3b-11b2-8080-808080808080
-""")
-print(rs.one())
+session.execute("""
+    UPDATE demo.users SET age =%s WHERE lastname = %s
+    """, 
+    [new_age, lastname])
+```{{execute}}    
+    
+After, we select the user's information back out to see if the update worked.
 
-```{{execute}}
-</details>
-
+```
+result = session.execute("""
+    SELECT * FROM demo.users WHERE lastname = %s
+    """, 
+    ["Jones"]).one()
+print(result.firstname, result.age)
+``` {{execute}}
