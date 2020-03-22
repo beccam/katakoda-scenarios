@@ -2,7 +2,7 @@
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
 mkdir sunshine
 mkdir sunshine/src
-mkdir sunshine/src
+mkdir sunshine/src/main
 mkdir sunshine/src/main/java
 mkdir sunshine/src/main/resources
 wget https://downloads.apache.org/cassandra/3.11.6/apache-cassandra-3.11.6-bin.tar.gz
