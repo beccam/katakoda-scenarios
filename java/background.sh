@@ -12,4 +12,7 @@ apache-cassandra-3.11.6/bin/cassandra -R
 while [ `grep "Starting listening for CQL clients" apache-cassandra-3.11.6/logs/system.log | wc -l` -lt 1 ]; do
    sleep 15
 done
+apache-cassandra-3.11.6/bin/cqlsh -e "CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};"
+apache-cassandra-3.11.6/bin/cqlsh -e "CREATE TABLE demo.users (lastname text PRIMARY KEY, age int, city text, email text, firstname text);"
+export JAVA_HOME=/usr/
 echo "done" >> /opt/katacoda-background-finished
