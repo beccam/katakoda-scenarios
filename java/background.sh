@@ -1,6 +1,6 @@
 #!/bin/bash
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
-export PATH=$JAVA_HOME/bin:$PATH
+echo "export JAVA_HOME=java-8-openjdk-amd64" >>~/.bashrc
+echo "export PATH=$JAVA_HOME/bin:$PATH" >>~/.bashrc
 mkdir sunshine
 mkdir sunshine/src
 mkdir sunshine/src/main
