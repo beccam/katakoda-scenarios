@@ -1,5 +1,5 @@
 #!/bin/bash
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+export JAVA_HOME=/usr/
 mkdir sunshine
 mkdir sunshine/src
 mkdir sunshine/src/main
@@ -14,5 +14,4 @@ while [ `grep "Starting listening for CQL clients" apache-cassandra-3.11.6/logs/
 done
 apache-cassandra-3.11.6/bin/cqlsh -e "CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};"
 apache-cassandra-3.11.6/bin/cqlsh -e "CREATE TABLE demo.users (lastname text PRIMARY KEY, age int, city text, email text, firstname text);"
-export JAVA_HOME=/usr/
 echo "done" >> /opt/katacoda-background-finished
