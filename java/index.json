@@ -1,6 +1,6 @@
 {
-  "title": "CQL Quickstart",
-  "description": "Learn the essential CQL commands needed to get started with Apache Cassandra™",
+  "title": "Try out the DataStax Driver for Apache Cassandra™",
+  "description": ,
   "difficulty": "Beginner",
   "time": "5 - 10 minutes",
   "details": {
