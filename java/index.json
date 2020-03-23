@@ -53,7 +53,7 @@
     }
   },
   "files": [
-        "Main.java"
+        "/root/quickstart/src/main/java/Main.java"
     ],
   "environment": {
     "uilayout": "editor-terminal",
