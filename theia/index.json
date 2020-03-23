@@ -46,7 +46,7 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "IDE", "port": 3000}],
+    "dashboards": [{"name": "IDE", "port": 80}],
     "uilayout": "terminal-iframe"
   },
   "backend": {
