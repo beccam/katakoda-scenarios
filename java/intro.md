@@ -8,7 +8,12 @@ In this scenario, you will:
   * Delete the user from the table
 * Process CQL query results programmatically
 
+<head>
 
-<figure class="video_container">
+<link rel = "stylesheet"
+  type = "text/css"
+  href = "assets/myStyle.css" />
+</head>
+<div class="video_container">
   <iframe src="https://player.vimeo.com/video/369471675" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</figure>
+</div>
