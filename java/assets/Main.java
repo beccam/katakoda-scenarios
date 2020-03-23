@@ -3,6 +3,23 @@ import com.datastax.oss.driver.api.core.cql.*;
 import java.net.InetSocketAddress;
 
 public class Main {
+    public static void main(String[] args) {
+        try (CqlSession session = CqlSession.builder()
+                .withKeyspace("demo")
+                .build()) {
+
+            //Call setUser method
+
+            //Call getUser method
+
+            //Call updateUser method
+
+            //Call getUser method
+
+            //Call deleteUser method
+
+        }
+    }
 
     private static void setUser(CqlSession session, String lastname, int age, String city, String email, String firstname) {
 
@@ -29,24 +46,6 @@ public class Main {
 
     }
 
-    public static void main(String[] args) {
-
-        try (CqlSession session = CqlSession.builder()
-                .withKeyspace("demo")
-                .build()) {
-
-            //Call setUser method
-
-            //Call getUser method
-
-            //Call updateUser method
-
-            //Call getUser method
-
-            //Call deleteUser method
-
-        }
-    }
 
 
 }
