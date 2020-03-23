@@ -1,8 +1,16 @@
-Next, let's create a table in your *killrvideo* keyspace. 
+Next, will we fill in the `getUser` method. Using the `execute()`, we will retrieve our user we just inserted back out of the table. This returns a ResultSet, which is an iterable of Row objects. On the next line, we extract the first row (which is the only one in this case); since there is only one user in the database with lastname "Jones".
 
-A table is a database object that stores your data and is defined by a schema. It consists of named columns with a specified data type and will store data in rows.
-It also has a **PRIMARY KEY**, which is extremely important in regards to data modeling. It determines row uniqueness, and also data distribution in the Cassandra cluster, sorting order for certain columns, and more. 
+```java
+ResultSet rs = session.execute(
+                SimpleStatement.builder("SELECT * FROM users WHERE lastname=?")
+                        .addPositionalValue(lastname)
+                        .build());
+Row row = rs.one();                        
+```  
+Then add code that will print out the `firstname` and `age` of the user.
 
-Run the command `CREATE TABLE killrvideo.users (userid UUID PRIMARY KEY, firstname TEXT, lastname TEXT, createdate TIMESTAMP, email TEXT);`.
+`System.out.format("%s %d\n", row.getString("firstname"), row.getInt("age"));`
 
-You can see we preface the table name **users** with the keyspace name. You can also run the command `USE killrvideo` to set your default keyspace so that you don't have to add the prefix everytime.
+Finally, we can call the `getUser` method in our `main` method.
+
+`getUser(session, "Jones");`                
