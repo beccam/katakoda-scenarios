@@ -1,6 +1,6 @@
 {
-  "title": "Try out the DataStax Driver for Apache Cassandra™",
-  "description": ,
+  "title": "Try out the DataStax Java Driver for Apache Cassandra™",
+  "description": "Give the DataStax Java Driver a try for yourself",
   "difficulty": "Beginner",
   "time": "5 - 10 minutes",
   "details": {
