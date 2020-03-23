@@ -52,9 +52,6 @@
       "text": "finish.md"
     }
   },
-  "files": [
-        "/root/quickstart/src/main/java/Main.java"
-    ],
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root/quickstart"
