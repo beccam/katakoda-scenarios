@@ -8,4 +8,4 @@ In this scenario, you will:
   * Delete the user from the table
 * Process CQL query results programmatically
 
-[![Getting Started](http://img.player.vimeo.com/video/369471675/0.jpg)](https://player.vimeo.com/video/369471675 "Getting Started")
+[![Getting Started](assets/gettingstarted.png)](https://player.vimeo.com/video/369471675 "Getting Started")
