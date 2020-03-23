@@ -9,4 +9,6 @@ In this scenario, you will:
 * Process CQL query results programmatically
 
 
-[![Getting Started]({assets/gettingstarted.png})]({https://player.vimeo.com/video/369471675} Getting Started")
+<figure class="video_container">
+  <iframe src="https://player.vimeo.com/video/369471675" width="640" height="360" frameborder="0"></iframe>
+</figure>
