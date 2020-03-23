@@ -1,3 +1,13 @@
-Now try the command `DESCRIBE KEYSPACES;`
+Now that we have a created a Session and  connected to Cassandra, we can use execute() to insert a user into that users table. Fill out the `setUser` method to do just that.
 
-Here you can see all of keyspaces that have been created in the Cassandra cluster. There are 5 other keyspaces aside from the *killrvideo* keyspace that you created, all of them starting with **system**. These are automatically created by the database and are used as the data dictionary for the cluster.
+```java
+session.execute(
+        SimpleStatement.builder( "INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?,?,?)")
+                .addPositionalValues(lastname, age, city, email, firstname)
+                .build());
+    }
+```
+
+In the `main` method, call the `setUser` method and include some user inputs.
+
+`setUser(session, "Jones", 35, "Austin", "bob@example.com", "Bob");`
