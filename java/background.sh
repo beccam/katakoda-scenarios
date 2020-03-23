@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "export JAVA_HOME=java-8-openjdk-amd64" >>~/.bashrc
 echo "export PATH=$JAVA_HOME/bin:$PATH" >>~/.bashrc
-mkdir sunshine
-mkdir sunshine/src
-mkdir sunshine/src/main
-mkdir sunshine/src/main/java
-mkdir sunshine/src/main/resources
+mkdir quickstart
+mkdir quickstart/src
+mkdir quickstart/src/main
+mkdir quickstart/src/main/java
+mkdir quickstart/src/main/resources
 wget https://downloads.apache.org/cassandra/3.11.6/apache-cassandra-3.11.6-bin.tar.gz
 tar xzf apache-cassandra-3.11.6-bin.tar.gz
 sed -i 's/^cluster_name: .*$/cluster_name: "CQL Quickstart"/g' apache-cassandra-3.11.6/conf/cassandra.yaml

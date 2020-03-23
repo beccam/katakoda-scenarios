@@ -7,10 +7,10 @@
     "assets": {
         "host01": [
             {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-            {"file": "pom.xml", "target": "sunshine"},
-            {"file": "Main.java", "target": "sunshine/src/main/java"},
-            {"file": "logback.xml", "target": "sunshine/src/main/resources"},
-            {"file": "application.conf", "target": "sunshine/src/main/resources"}
+            {"file": "pom.xml", "target": "quickstart"},
+            {"file": "Main.java", "target": "quickstart/src/main/java"},
+            {"file": "logback.xml", "target": "quickstart/src/main/resources"},
+            {"file": "application.conf", "target": "quickstart/src/main/resources"}
         ]
     },
     "steps": [
@@ -54,7 +54,7 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/sunshine"
+    "uieditorpath": "/root/quickstart"
   },
   "backend": {
     "imageid": "ubuntu"
