@@ -13,4 +13,8 @@ Then add code that will print out the `firstname` and `age` of the user.
 
 Finally, we can call the `getUser` method in our `main` method.
 
-`getUser(session, "Jones");`                
+`getUser(session, "Jones");`  
+
+You can then run Maven to launch the program from the `quickstart` directory.
+
+`mvn compile exec:java -Dexec.mainClass=Main`              
