@@ -10,5 +10,5 @@ In this scenario, you will:
 
 
 <figure class="video_container">
-  <iframe src="https://player.vimeo.com/video/369471675" width="1920" height="1080" frameborder="0"></iframe>
+  <iframe src="https://player.vimeo.com/video/369471675" width="1920px" height="1080px" frameborder="0"></iframe>
 </figure>
