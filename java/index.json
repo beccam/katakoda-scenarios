@@ -52,11 +52,9 @@
       "text": "finish.md"
     }
   },
-  "files": [
-       "sunshine/src/main/java/Main.java"
-   ],
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/sunshine"
   },
   "backend": {
     "imageid": "ubuntu"
