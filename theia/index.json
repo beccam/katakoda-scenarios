@@ -1,0 +1,56 @@
+{
+  "title": "Try Theia",
+  "description": "",
+  "difficulty": "Beginner",
+  "time": "5 - 10 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+            {"file": "pom.xml", "target": "quickstart"},
+            {"file": "Main.java", "target": "quickstart/src/main/java"},
+            {"file": "logback.xml", "target": "quickstart/src/main/resources"},
+            {"file": "application.conf", "target": "quickstart/src/main/resources"}
+        ]
+    },
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "courseData": "background.sh",
+      "code": "foreground.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "IDE", "port": 80}],
+    "uilayout": "terminal-iframe"
+  },
+  "backend": {
+    "imageid": "theiaide",
+    "port": 80
+  }
+}
