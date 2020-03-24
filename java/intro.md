@@ -9,4 +9,4 @@ In this scenario, you will:
 * Process CQL query results programmatically
 
 
-<iframe width="560" height="315" src="https://player.vimeo.com/video/369471675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1000" height="600" src="https://player.vimeo.com/video/369471675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
