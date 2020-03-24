@@ -1,5 +1,5 @@
 {
-  "title": "CQL Quickstart",
+  "title": "Connect to Astra",
   "description": "Learn the essential CQL commands needed to get started with Apache Cassandra™",
   "difficulty": "Beginner",
   "time": "5 - 10 minutes",
@@ -7,6 +7,7 @@
     "assets": {
         "host01": [
             {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+            {"file": "secure-connect-kalesandwich.zip", "target": "/.cassandra"}
         ]
     },
     "steps": [
