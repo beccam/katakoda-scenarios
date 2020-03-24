@@ -9,6 +9,4 @@ In this scenario, you will:
 * Process CQL query results programmatically
 
 
-<div class="video_container">
-  <iframe src="https://player.vimeo.com/video/369471675" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div>
+<iframe width="560" height="315" src="https://player.vimeo.com/video/369471675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
