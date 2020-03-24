@@ -2,6 +2,7 @@
 mkdir ~/.cassandra
 cd ~/.cassandra
 unzip secure-connect-database_name.zip
+cd ..
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
 wget https://downloads.apache.org/cassandra/3.11.6/apache-cassandra-3.11.6-bin.tar.gz
 tar xzf apache-cassandra-3.11.6-bin.tar.gz
