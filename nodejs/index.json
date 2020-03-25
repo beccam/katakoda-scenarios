@@ -58,7 +58,7 @@
   ],
   "environment": {
     "showide": true,
-    "ide": "ssh host01 '/opt/start-vscode.sh'",
+    "ide": "ssh host01 'cd quickstart' '/opt/start-vscode.sh'",
     "idePort": 23000,
 
     "hideintro": true,
