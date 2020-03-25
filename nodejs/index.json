@@ -1,16 +1,12 @@
 {
-  "title": "Try Theia",
+  "title": "Try out the DataStax Python Driver for Apache Cassandra™",
   "description": "",
   "difficulty": "Beginner",
   "time": "5 - 10 minutes",
   "details": {
     "assets": {
         "host01": [
-            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-            {"file": "pom.xml", "target": "quickstart"},
-            {"file": "Main.java", "target": "quickstart/src/main/java"},
-            {"file": "logback.xml", "target": "quickstart/src/main/resources"},
-            {"file": "application.conf", "target": "quickstart/src/main/resources"}
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
         ]
     },
     "steps": [
@@ -33,6 +29,18 @@
       {
         "title": "Step 5",
         "text": "step5.md"
+      },
+      {
+        "title": "Step 6",
+        "text": "step6.md"
+      },
+      {
+        "title": "Step 7",
+        "text": "step7.md"
+      },
+      {
+        "title": "Step 8",
+        "text": "step8.md"
       }
     ],
     "intro": {
@@ -45,12 +53,9 @@
     }
   },
   "environment": {
-    "showdashboard": true,
-    "dashboards": [{"name": "IDE", "port": 80}],
-    "uilayout": "terminal-iframe"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "theiaide",
-    "port": 80
+    "imageid": "ubuntu"
   }
 }
