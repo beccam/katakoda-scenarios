@@ -53,6 +53,9 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "quickstart.js"
+  ],
   "environment": {
     "showide": true,
     "ide": "ssh host01 '/opt/start-vscode.sh'",
