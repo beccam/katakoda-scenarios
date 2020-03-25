@@ -6,7 +6,8 @@
   "details": {
     "assets": {
         "host01": [
-            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+            {"file": "quickstart.js", "target": "~/"}
         ]
     },
     "steps": [
@@ -53,6 +54,11 @@
     }
   },
   "environment": {
+    "showide": true,
+    "ide": "ssh host01 '/opt/start-vscode.sh'",
+    "idePort": 23000,
+
+    "hideintro": true,
     "uilayout": "terminal"
   },
   "backend": {
