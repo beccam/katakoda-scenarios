@@ -9,4 +9,5 @@ while [ `grep "Starting listening for CQL clients" apache-cassandra-3.11.6/logs/
 done
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
+npm install cassandra-driver
 echo "done" >> /opt/katacoda-background-finished

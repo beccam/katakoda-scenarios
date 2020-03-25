@@ -1,4 +1,3 @@
-Wait for Cassandra to finish starting up, this shouldn't take long! When it is finished, start the Python interpreter:
+Wait for Cassandra to finish starting up, this shouldn't take long! When it is finished, start the Node.js REPL:
 
- `python`{{execute}}:
-
+ `node`{{execute}}:
