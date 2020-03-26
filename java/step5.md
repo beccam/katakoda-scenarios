@@ -11,6 +11,3 @@ Call the `deleteUser` method from the `main` method.
 
 `deleteUser(session, "Jones");`
 
-You can then run Maven to launch the program from the `quickstart` directory.
-
-`mvn compile exec:java -Dexec.mainClass=Main` 
