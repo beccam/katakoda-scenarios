@@ -4,10 +4,10 @@ Finally we will delete our user from the table. Build out the `deleteUser` metho
 const remove = 'DELETE FROM users WHERE lastname = ?';
 const params = [ lastname ];
 return client.execute(remove, params)
-```
+```{{copy}}
 
 Call the `deleteUser` function from the `example()` function
 
-`await deleteUser('Jones');`
+`await deleteUser('Jones');`{{copy}}
 
-launch with `node quickstart.js`
+launch with `node quickstart.js`{{execute}}
