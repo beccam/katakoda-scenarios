@@ -1,11 +1,13 @@
-Use method `session.execute()` to execute a CQL statement that will create a `demo` keyspace:
+Now that we have a created a `Client` , we can use `execute` to insert a user into that users table. Fill out the `insertUser` function to do just that.
 
-```
-session.execute("CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}")
-```{{execute}}
+```js
+const insert = 'INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?,?,?)';
+const params = [ lastname, age, city, email, firstname ];
+return client.execute(insert, params);
+```{{copy}}
 
-Add a `users` table, once again using the `session.execute()` method:
+In the `async function example`, call the `insertUser` function and include some user inputs.
 
-```
-session.execute("CREATE TABLE demo.users (lastname text PRIMARY KEY, age int, city text, email text, firstname text)")
-```{{execute}}
+`await insertUser('Jones', 35, 'Austin', 'bob@example.com', 'Bob');`{{copy}}
+
+`
