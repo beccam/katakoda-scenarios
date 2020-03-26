@@ -1,14 +1,15 @@
-Finally we will delete our user from the table. Build out the `deleteUser` method with a `DELETE` statement to do so.
+<pre class="file" data-filename="app.js" data-target="replace">var http = require('http');
+var requestListener = function (req, res) {
+  res.writeHead(200);
+  res.end('Hello, World!');
+}
 
-```js
-// TO DO: execute a prepared that deletes one user from the table
-const remove = 'DELETE FROM users WHERE lastname = ?';
-const params = [ lastname ];
-return client.execute(remove, params, { prepare: true })
-```
+var server = http.createServer(requestListener);
+server.listen(3000, function() { console.log("Listening on port 3000")});
+</pre>
+          
 
-Call the `deleteUser` method from the `main` method.
+<pre class="file" data-target="clipboard">Test</pre>
+          
 
-`deleteUser(session, "Jones");`
-
-
+<pre class="file" data-target="regex???">Test</pre>
