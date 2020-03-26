@@ -7,32 +7,31 @@
     "assets": {
         "host01": [
             {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-            {"file": "quickstart.js", "target": "~/"}
         ]
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Set up quickstart.js",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Create the Client instance",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Insert a suer",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Select a user",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Update a user's age",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "Delete a user",
         "text": "step6.md"
       }
     ],

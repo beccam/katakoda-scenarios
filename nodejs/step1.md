@@ -1,6 +1,7 @@
-Once Cassandra has  finished starting up, click on the IDE tab in the dashboard and wait for it to load. Once it is ready, locate the quickstart.js in the panel and click on it to open it. This is where you will be adding your code to interact with Cassandra.
+Once Cassandra has  finished starting up, click on the IDE tab in the dashboard and wait for it to load.
+Click on the IDE tab to load VS Code.
+<p>Copy the following code into the editor to create our Node.js demo application</p>
 
-<p>Copy the following code into the editor to create a Node.js demo application!</p>
 <pre class="file" data-filename="quick.js" data-target="replace">const cassandra = require('cassandra-driver');
 
 // TO DO: Fill in your own host and data center
@@ -41,7 +42,7 @@ async function example() {
   // Call selectUser
   // Call updateUser
   // Call deleteUser
-  
+
   await client.shutdown();
 }
 

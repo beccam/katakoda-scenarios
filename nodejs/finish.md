@@ -1,1 +1,1 @@
-Congratulations! You now have the basic knowledge of using the Python driver for Apache Cassandra™.
+Congratulations! You now have the basic knowledge of using the DataStax Node.js driver for Apache Cassandra™.
