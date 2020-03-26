@@ -1,11 +1,19 @@
-Now that we have a `Session` and we have created our keyspace and table, we can use `session.execute()` to insert a user into that `users` table:
+Next, will we fill in the `selectUser` function. Using the `execute()` method, we will retrieve our user we just inserted back out of the table. 
+```js
+const select = 'SELECT firstname, age FROM users WHERE lastname = ?';
+const params = [ lastname ] ;
+return client.execute(select, params);          
+```{{copy}}  
 
-```
-session.execute("""
-    INSERT INTO demo.users
-    (lastname, age, city, email, firstname)
-     VALUES (%s,%s,%s,%s,%s)
-    """,
-    ("Jones", 35, "Austin", "bob@example.com", "Bob")
-)
-```{{execute}}
+Finally, we can call the `getUser` function in our `async function example()`. add code that will print out the `firstname` and `age` of the user.We use the `first()` method to extract the first row (which is the only one in this case); since there is only one user in the database with lastname "Jones".
+
+```js
+const rs1 = await selectUser('Jones');
+  const user1 = rs1.first();
+  if (user1) {
+    console.log("name = %s, age = %d", user1.firstname, user1.age);
+  } else {
+    console.log("No results");
+  }
+```{{copy}}
+
