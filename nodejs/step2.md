@@ -4,7 +4,7 @@ Before we start executing any queries against a Cassandra, we need to setup a `C
 
 The simplest way to create a `Client` is like this:
 
-```javascript
+```js
 const client = new cassandra.Client({
   contactPoints: ['127.0.0.1'],
   localDataCenter: 'datacenter1',
