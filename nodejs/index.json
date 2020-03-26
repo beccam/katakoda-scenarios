@@ -6,7 +6,7 @@
   "details": {
     "assets": {
         "host01": [
-            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
         ]
     },
     "steps": [
@@ -49,9 +49,10 @@
   ],
   "environment": {
     "showide": true,
+
     "ide": "ssh host01 '/opt/start-vscode.sh'",
     "idePort": 23000,
-
+    "dashboards": [{"name": "VS Code", "port": 80}],
     "hideintro": true,
     "uilayout": "terminal"
   },
