@@ -1,18 +1,16 @@
-Say the user has had a birthday and we want to update their age. We will use the `session.execute()` method to perform and UPDATE on that row.
+Finally we will delete our user from the table. Build out the `deleteUser` method with a `DELETE` statement to do so.
 
 ```
-session.execute("""
-    UPDATE demo.users SET age =%s WHERE lastname = %s
-    """, 
-    [36, "Jones"])
-```{{execute}}    
-    
-After, we select the user's information back out to see if the update worked.
-
+session.execute(
+    SimpleStatement.builder("DELETE FROM users WHERE lastname=?")
+            .addPositionalValue(lastname)
+            .build());
 ```
-result = session.execute("""
-    SELECT * FROM demo.users WHERE lastname = %s
-    """, 
-    ["Jones"]).one()
-print(result.firstname, result.age)
-``` {{execute}}
+
+Call the `deleteUser` method from the `main` method.
+
+`deleteUser(session, "Jones");`
+
+You can then run Maven to launch the program from the `quickstart` directory.
+
+`mvn compile exec:java -Dexec.mainClass=Main` 
