@@ -18,6 +18,8 @@ console.log("No results");
 }
 ```{{copy}}
 
+launch with `node quickstart.js`{{execute}}
+
 
     
     
