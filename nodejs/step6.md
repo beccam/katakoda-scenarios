@@ -3,7 +3,7 @@ Finally we will delete our user from the table. Build out the `deleteUser` metho
 ```js
 const remove = 'DELETE FROM users WHERE lastname = ?';
 const params = [ lastname ];
-return client.execute(remove, params)
+return client.execute(remove, params, { prepare : true })
 ```{{copy}}
 
 Call the `deleteUser` function from the `example()` function

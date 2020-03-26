@@ -2,7 +2,7 @@ Say our user has a birthday. We create the `updateUser` function to update the u
 
 ```js
 const update = 'UPDATE users SET age = ? WHERE lastname = ?';
-return client.execute(update, [ age, lastname ])
+return client.execute(update, [ age, lastname ], { prepare : true })
 ```{{copy}}
 
 Call the `updateUser` function, and the `selectUser` created earlier from `async function example()` to see the change in the user's age.
@@ -19,9 +19,3 @@ console.log("No results");
 ```{{copy}}
 
 launch with `node quickstart.js`{{execute}}
-
-
-    
-    
-
-
