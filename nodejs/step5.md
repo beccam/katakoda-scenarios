@@ -1,13 +1,22 @@
-Using `session.execute()`, we will retrieve our user we just inserted back out of the table. Since there is only one user in the database with lastname "Jones", we can use the `one()` method to return a single row of the results. Then we will print out the name and age of our user. 
+Say our user has a birthday. We create the `updateUser` function to update the user's age. Within the empty `updateUser` method, `execute()` an `UPDATE` statement that allows us to do just that.
 
-```
-result = session.execute("""
-    SELECT * FROM demo.users WHERE lastname = %s
-    """, 
-    ["Jones"]).one()
-print(result.firstname, result.age)
-``` {{execute}}
-    
+```js
+const update = 'UPDATE users SET age = ? WHERE lastname = ?';
+return client.execute(update, [ age, lastname ])
+```{{copy}}
+
+Call the `updateUser` function, and the `selectUser` created earlier from `async function example()` to see the change in the user's age.
+
+```js
+await updateUser(36, 'Jones');
+const rs2 = await selectUser('Jones');
+const user2 = rs2.first();
+if (user2) {
+console.log("name = %s, age = %d", user2.firstname, user2.age);
+} else {
+console.log("No results");
+}
+```{{copy}}
 
 
     
