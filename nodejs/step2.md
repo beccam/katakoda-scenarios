@@ -1,15 +1,14 @@
-Before we can start executing any queries against a Cassandra, we need to setup an instance of `Cluster`. As the name suggests, you will typically have one instance of `Cluster` for each Cassandra cluster you want to interact with.
+# **Creating a Client**
 
-The simplest way to create a Cluster is like this:
+Before we start executing any queries against a Cassandra, we need to setup a `Client`. This has already been done for you. A `Client` holds connections to a Cassandra cluster, allowing it to be queried. To connect to an Cassandra cluster, you need to provide the address or host name of at least one node in the cluster and the local data center name. 
 
+The simplest way to create a `Client` is like this:
+
+```javascript
+const client = new cassandra.Client({
+  contactPoints: ['127.0.0.1'],
+  localDataCenter: 'datacenter1',
+  keyspace: 'demo'
+});
 ```
-from cassandra.cluster import Cluster
-cluster = Cluster(protocol_version = 3)
-```{{execute}}
-
-Instantiating a Cluster does not actually connect us to any nodes. To establish connections and begin executing queries we need a `Session`, which is created by calling `Cluster.connect()`:
-
-```
-session = cluster.connect()
-```{{execute}}
 
