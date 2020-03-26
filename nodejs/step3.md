@@ -10,4 +10,7 @@ In the `async function example`, call the `insertUser` function and include some
 
 `await insertUser('Jones', 35, 'Austin', 'bob@example.com', 'Bob');`{{copy}}
 
+launch with `node quickstart.js`{{execute}}
+
+
 `
