@@ -1,0 +1,65 @@
+{
+  "title": "Try out the DataStax Node.js Driver for Apache Cassandra™",
+  "description": "",
+  "difficulty": "Beginner",
+  "time": "5 - 10 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+        ]
+    },
+    "steps": [
+      {
+        "title": "Set up quickstart.js",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create the Client instance",
+        "text": "step2.md"
+      },
+      {
+        "title": "Insert a suer",
+        "text": "step3.md"
+      },
+      {
+        "title": "Select a user",
+        "text": "step4.md"
+      },
+      {
+        "title": "Update a user's age",
+        "text": "step5.md"
+      },
+      {
+        "title": "Delete a user",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "courseData": "background.sh",
+      "code": "foreground.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [
+    "quickstart.js"
+  ],
+  "environment": {
+    "showide": true,
+
+    "ide": "ssh host01 '/opt/start-vscode.sh'",
+    "idePort": 23000,
+    "dashboards": [{
+      "name": "VS Code",
+      "port": 23000
+      }],
+    "hideintro": true,
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
