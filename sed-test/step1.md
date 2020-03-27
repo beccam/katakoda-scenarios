@@ -15,7 +15,7 @@ const client = new cassandra.Client({
 
 function insertUser(lastname, age, city, email, firstname) {
 
-  foo
+  "hello"
 
 }
 
