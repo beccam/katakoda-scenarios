@@ -20,7 +20,8 @@
       },
       {
         "title": "Insert a user",
-        "text": "step3.md"
+        "text": "step3.md",
+        "courseData": "insert.sh"
       },
       {
         "title": "Select a user",
