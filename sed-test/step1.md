@@ -15,7 +15,7 @@ const client = new cassandra.Client({
 
 function insertUser(lastname, age, city, email, firstname) {
 
-  // TO DO: execute a prepared statement that inserts one user into the table
+  foo
 
 }
 
