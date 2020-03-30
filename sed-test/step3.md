@@ -1,8 +1,8 @@
 Now that we have a created a `Client` , we can use `execute` to insert a user into that users table. Fill out the `insertUser` function to do just that.
 
-<pre class="file" data-target="clipboard">Test</pre>
+<pre class="file" data-target="clipboard">test</pre>
 
-<pre class="file" data-target="regex???">Test</pre>
+<pre class="file" data-filename="quickstart.js" data-target="test">Test</pre>
 
 ```js
 const insert = 'INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?,?,?)';
