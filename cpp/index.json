@@ -43,7 +43,8 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root"
+    "uieditorpath": "/root",
+    "uisettings": "cpp"
   },
   "backend": {
     "imageid": "ubuntu"
