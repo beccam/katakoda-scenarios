@@ -41,9 +41,6 @@
       "text": "finish.md"
     }
   },
-  "files": [
-    "quickstart.c"
-  ],
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root"
