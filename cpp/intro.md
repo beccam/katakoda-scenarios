@@ -8,4 +8,3 @@ In this scenario, you will:
   * Delete the user from the table
 * Process CQL query results programmatically
 
-<iframe style="width: 700px;height: 400px;" src="https://player.vimeo.com/video/369471675" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
