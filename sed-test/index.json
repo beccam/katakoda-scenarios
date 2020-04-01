@@ -1,5 +1,5 @@
 {
-  "title": "Node.js Driver Experiment",
+  "title": "sed exp",
   "description": "",
   "difficulty": "Beginner",
   "time": "5 - 10 minutes",
@@ -49,16 +49,8 @@
     "quickstart.js"
   ],
   "environment": {
-    "showide": true,
-
-    "ide": "ssh host01 '/opt/start-vscode.sh'",
-    "idePort": 23000,
-    "dashboards": [{
-      "name": "VS Code",
-      "port": 23000
-      }],
-    "hideintro": true,
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root"
   },
   "backend": {
     "imageid": "ubuntu"
