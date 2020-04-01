@@ -6,7 +6,8 @@
   "details": {
     "assets": {
         "host01": [
-            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+            {"file": "test.txt", "target": "~/"}
         ]
     },
     "steps": [
@@ -46,7 +47,7 @@
     }
   },
   "files": [
-    "quickstart.js"
+    "test.txt"
   ],
   "environment": {
     "uilayout": "editor-terminal",

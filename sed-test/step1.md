@@ -4,7 +4,7 @@ Once Cassandra has  finished starting up, click on the IDE tab in the dashboard 
 
 <details>
   <summary>Click to get code</summary>
-<pre class="file" data-filename="stuff.txt" data-target="replace">
+<pre class="file" data-filename="test.txt" data-target="replace">
 this is a test
 
 
