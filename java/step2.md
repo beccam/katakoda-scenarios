@@ -1,11 +1,15 @@
 Now that we have a created a Session and  connected to Cassandra, we can use execute() to insert a user into that users table. Fill out the `setUser` method to do just that.
 
-```java
-session.execute(
+<pre class="file" data-filename="quickstart/src/main/java/Main.js" data-target="append">
+    private static void setUser(CqlSession session, String lastname, int age, String city, String email, String firstname) {
+
+    //TO DO: execute SimpleStatement that inserts one user into the table
+    session.execute(
         SimpleStatement.builder( "INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?,?,?)")
                 .addPositionalValues(lastname, age, city, email, firstname)
                 .build());
-```
+    }
+</pre>
 
 In the `main` method, call the `setUser` method and include some user inputs.
 
