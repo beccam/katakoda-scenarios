@@ -11,4 +11,5 @@ this is a test
 </pre>
 </details>
 
-`# Insert a row INSERT...`{{execute}}
+`# Insert a row
+INSERT...`{{execute}}
