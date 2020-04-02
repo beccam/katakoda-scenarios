@@ -19,7 +19,7 @@ Before we start executing any queries against a Cassandra, we need to setup an i
  <summary style="color:teal">Example:</summary>
  CqlSession session = CqlSession.builder()
     .addContactPoint(new InetSocketAddress("1.2.3.4", 9042))
-    .addKeyspace("KillrVideo")
+    .withKeyspace("KillrVideo")
     .withLocalDatacenter("dc1")
     .build();
 
@@ -27,3 +27,14 @@ In the Main class, augement the CqlSession.builder() to add
 * A contact point and InetSocket(`"127.0.0.1", 9042`)
 * keyspace ("demo")
 * local datacenter name ("datacenter1")
+
+<details>
+  <summary style="color:teal">Solution</summary>
+  CqlSession session = CqlSession.builder()
+                .addContactPoint(new InetSocketAddress("127.0.0.1", 9042))
+                .withKeyspace("demo")
+                .withLocalDatacenter("datacenter1")
+                .build())
+</details>
+
+Once you have finished configuring your, we can move on to learning about SimpleStatements.                
