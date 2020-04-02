@@ -1,10 +1,9 @@
-The DataStax Java Driver  is a modern, feature-rich and highly tunable Java client library for Apache Cassandra™ (2.1+) and DataStax Enterprise (4.7+), and DataStax Apollo, using exclusively Cassandra’s binary protocol and Cassandra Query Language (CQL) v3.
+*The Datastax Java Driver for Apache Cassandra™ A modern, feature-rich and highly tunable Java client library for Apache Cassandra® (2.1+) and DataStax Enterprise (4.7+), and DataStax Apollo, using exclusively Cassandra’s binary protocol and Cassandra Query Language (CQL) v3.*
 
 In this scenario, you will:
 
-* Connect to an Apache Cassandra™ instance with the DataStax Python driver
+* Connect to an Apache Cassandra™ instance with the DataStax Java driver
 * Use the driver to execute CQL statements against Apache Cassandra™ that do the following:
-  * Create a keyspace and table programmatically
   * Insert a user into a table
   * Select that user back out
   * Update the user's age
