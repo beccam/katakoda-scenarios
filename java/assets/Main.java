@@ -6,7 +6,7 @@ public class GettingStarted {
 
     public static void main(String[] args) {
 
-        // TO DO: Alter Fill in address, data center
+        // TO DO: Fill in contact point, keyspace, & data center
         try (CqlSession session = CqlSession.builder().build()) {
 
             setUser(session, "Juilus", "Caesar", "juilus@example.com");
