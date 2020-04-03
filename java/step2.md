@@ -30,4 +30,5 @@ We will be using Maven to build and run our application. Make sure you are in th
 
 You can then run Maven to launch the program
 `mvn compile exec:java -Dexec.mainClass=Main`{{execute}}
-`
+
+## Up next, we will run a query to select our user back out!
