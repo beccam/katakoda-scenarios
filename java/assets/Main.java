@@ -9,21 +9,21 @@ public class GettingStarted {
         // TO DO: Alter Fill in address, data center
         try (CqlSession session = CqlSession.builder().build()) {
 
-            setUser(session, "Jones", 35, "Austin", "bob@example.com", "Bob");
+            setUser(session, "Juilus", "Caesar", "juilus@example.com");
 
-            getUser(session, "Jones");
+            getUser(session, "Caesar");
 
-            updateUser(session, 36, "Jones");
+            updateUser(session, "jc@example.com", "Jones");
 
-            getUser(session, "Jones");
+            getUser(session, "Caesar");
 
-            deleteUser(session, "Jones");
+            deleteUser(session, "Caesar");
 
         }
 
     }
 
-    private static void setUser(CqlSession session, String lastname, int age, String city, String email, String firstname) {
+    private static void setUser(CqlSession session, String lastname, String firstname, String email) {
 
         //TO DO: execute SimpleStatement that inserts one user into the table
     }
@@ -32,13 +32,13 @@ public class GettingStarted {
 
         //TO DO: execute SimpleStatement that retrieves one user from the table
 
-        //TO DO: print firstname and age of user
+        //TO DO: print firstname and email of user
     }
 
 
-    private static void updateUser(CqlSession session, int age, String lastname) {
+    private static void updateUser(CqlSession session, String email, String lastname) {
 
-        //TO DO: execute SimpleStatement that updates the age of one user
+        //TO DO: execute SimpleStatement that updates the email of one user
     }
 
     private static void deleteUser(CqlSession session, String lastname) {

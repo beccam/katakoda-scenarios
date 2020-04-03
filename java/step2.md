@@ -1,25 +1,33 @@
-Now that we have a created a Session and  connected to Cassandra, we can use execute() to insert a user into that users table. Fill out the `setUser` method to do just that.
+Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to insert a user into that users table.
 
-<pre class="file" data-filename="quickstart/src/main/java/Main.js" data-target="append">
-    private static void setUser(CqlSession session, String lastname, int age, String city, String email, String firstname) {
+To execute a CQL query, you create a *Statement* instance and pass it to *session.execute*.The driver provides various implementations of *Statement*. For this example, we are going to use a `SimpleStatement` to insert out user, adding the values separately.
 
-    //TO DO: execute SimpleStatement that inserts one user into the table
-    session.execute(
-        SimpleStatement.builder( "INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?,?,?)")
-                .addPositionalValues(lastname, age, city, email, firstname)
-                .build());
-    }
-</pre>
+ <summary style="color:teal">Example:</summary>
+```
+session.execute(
+    SimpleStatement.builder( "INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?)")
+            .addPositionalValues("Marcus", "Brutus", "marcus@example.com")
+            .build());
+```
 
-In the `main` method, call the `setUser` method and include some user inputs.
+In the `main` method, we call the *setUser* method and with parameters
+`setUser(session, "Juilus", "Caesar", "juilus@example.com");``
 
-`setUser(session, "Jones", 35, "Austin", "bob@example.com", "Bob");`
+Fill in the *setUser* such the the user is inserted into the table
+<details>
+  <summary style="color:teal">Solution</summary>
+  ```
+  session.execute(
+      SimpleStatement.builder( "INSERT INTO users (lastname, firstname, email) VALUES (?,?,?)")
+              .addPositionalValues(lastname, firstname, email)
+              .build());
+  ```              
+</details>
 
-We will be using Mavan to build and run our application. Make sure you are in the `quickstart` directory in your terminal.
 
-`cd quickstart`
+We will be using Maven to build and run our application. Make sure you are in the `quickstart` directory in your terminal.
+`cd quickstart`{{execute}}
 
 You can then run Maven to launch the program
-
-`mvn compile exec:java -Dexec.mainClass=Main`
+`mvn compile exec:java -Dexec.mainClass=Main`{{execute}}
 `

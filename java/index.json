@@ -15,11 +15,11 @@
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Creating a CqlSession Instance",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "SimpleStatements: Insert a user",
         "text": "step2.md"
       },
       {

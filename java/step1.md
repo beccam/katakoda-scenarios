@@ -21,10 +21,10 @@ Before we start executing any queries against a Cassandra, we need to setup an i
     .build();
 ```    
 
-In the Main class, augment the CqlSession.builder() to add
+In the Main class, augment the `CqlSession.builder()` to add
 * A contact point and InetSocket(`"127.0.0.1", 9042`)
-* keyspace ("demo")
-* local datacenter name ("datacenter1")
+* keyspace (``"demo"``)
+* local datacenter name (``"datacenter1"``)
 
 <details>
   <summary style="color:teal">Solution</summary>
@@ -36,5 +36,7 @@ In the Main class, augment the CqlSession.builder() to add
                 .build())
   ```              
 </details>
+
+</br>
 
 ## Once you have finished configuring your, we can move on to learning about SimpleStatements.                
