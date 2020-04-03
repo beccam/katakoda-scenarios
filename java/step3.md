@@ -38,5 +38,5 @@ Go ahead and fill in the `getUser` method that will select our user back out.
 We will be using Maven to build and run our application. Make sure you are in the `quickstart` directory in your terminal.
 `cd quickstart`{{execute}}
 
-You can then run Maven to launch the program
+You can then run Maven to launch the program 
 `mvn compile exec:java -Dexec.mainClass=Main`{{execute}}            

@@ -6,14 +6,14 @@ To execute a CQL query, you create a *Statement* instance and pass it to *sessio
 ```
 session.execute(
     SimpleStatement.builder( "INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?)")
-            .addPositionalValues("Marcus", "Brutus", "marcus@example.com")
+            .addPositionalValues("Brutus", "Marcus", "marcus@example.com")
             .build());
 ```
 
 In the `main` method, we call the *setUser* method and with parameters
 `setUser(session, "Juilus", "Caesar", "juilus@example.com");``
 
-Fill in the *setUser* such the the user is inserted into the table
+Fill in the *setUser* method such the the user is inserted into the table
 <details>
   <summary style="color:teal">Solution</summary>
   ```

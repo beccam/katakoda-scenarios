@@ -13,7 +13,7 @@ public class GettingStarted {
 
             getUser(session, "Caesar");
 
-            updateUser(session, "jc@example.com", "Caesars");
+            updateUser(session, "jc@example.com", "Caesar");
 
             getUser(session, "Caesar");
 
