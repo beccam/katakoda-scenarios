@@ -6,7 +6,6 @@ session.execute(
         SimpleStatement.builder("UPDATE users SET email =?  WHERE lastname =? ")
                 .addPositionalValues("mb@example.com", "Brutus")
                 .build());
-}
 ```
 
 Look at `main` method, where we call the `updateUser` method, selecting the user by their lastname. We then select for the user with the `getUser` to see if our change worked.
@@ -24,7 +23,6 @@ Fill in *updateUser* such the the user is inserted into the table
           SimpleStatement.builder("UPDATE users SET email =?  WHERE lastname =? ")
                   .addPositionalValues(email, lastname)
                   .build());
-  }
   ```              
 </details>
 

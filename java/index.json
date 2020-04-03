@@ -1,5 +1,5 @@
 {
-  "title": "Try out the DataStax Java Driver for Apache Cassandra™",
+  "title": "Try It Out: DataStax Java Driver for Apache Cassandra™",
   "description": "This is a WIP",
   "difficulty": "Beginner",
   "time": "5 - 10 minutes",
@@ -27,12 +27,16 @@
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "SimpleStatements: Update a user",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "SimpleStatements: Delete a user",
         "text": "step5.md"
+      },
+      {
+        "title": "Quiz",
+        "text": "step6.md"
       }
     ],
     "intro": {
