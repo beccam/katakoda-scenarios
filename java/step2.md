@@ -12,10 +12,11 @@ To execute a CQL query, you create a *Statement* instance and pass it to `sessio
 
  <summary style="color:teal">Example:</summary>
 ```
-session.execute(
-    SimpleStatement.builder( "INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?)")
-            .addPositionalValues("Brutus", "Marcus", "marcus@example.com")
-            .build());
+<pre style='color:#000000;background:#f1f0f0;'>session<span style='color:#806030; '>.</span>execute<span style='color:#806030; '>(</span>
+    SimpleStatement<span style='color:#806030; '>.</span>builder<span style='color:#806030; '>(</span> <span style='color:#800000; '>"</span><span style='color:#e60000; '>INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?)</span><span style='color:#800000; '>"</span><span style='color:#806030; '>)</span>
+            <span style='color:#806030; '>.</span>addPositionalValues<span style='color:#806030; '>(</span><span style='color:#800000; '>"</span><span style='color:#e60000; '>Brutus</span><span style='color:#800000; '>"</span><span style='color:#806030; '>,</span> <span style='color:#800000; '>"</span><span style='color:#e60000; '>Marcus</span><span style='color:#800000; '>"</span><span style='color:#806030; '>,</span> <span style='color:#800000; '>"</span><span style='color:#e60000; '>marcus@example.com</span><span style='color:#800000; '>"</span><span style='color:#806030; '>)</span>
+            <span style='color:#806030; '>.</span>build<span style='color:#806030; '>(</span><span style='color:#806030; '>)</span><span style='color:#806030; '>)</span><span style='color:#806030; '>;</span>
+</pre>
 ```
 
 In the *main* method, we call the `setUser`method and with parameters"
