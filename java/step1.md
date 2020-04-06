@@ -10,13 +10,13 @@ Before we start executing any queries against a Cassandra, we need to setup an i
 `CqlSession session = CqlSession.builder().build();`
 
 
-*CqlSession#builder()* provides a fluent API to create an instance programmatically. With it you can explicitly add contact points, a datacenter name, and a keyspace name for your session to connect to.
+*CqlSessio.builder()* provides a fluent API to create an instance programmatically. With it you can explicitly add contact points, a datacenter name, and a keyspace name for your session to connect to.
 
  <summary style="color:teal">Example:</summary>
  ```
  CqlSession session = CqlSession.builder()
     .addContactPoint(new InetSocketAddress("1.2.3.4", 9042))
-    .withKeyspace("KillrVideo")
+    .withKeyspace("SomeKS")
     .withLocalDatacenter("dc1")
     .build();
 ```    
@@ -38,5 +38,12 @@ In the Main class, augment the `CqlSession.builder()` to add
 </details>
 
 </br>
+
+We will be using Maven to build and run our application. Make sure you are in the quickstart directory in your terminal.
+cd quickstart{{execute}}
+
+You can then run Maven to launch the program mvn compile exec:java -Dexec.mainClass=Main{{execute}}.
+
+Maven will get busy gathering the dependencies specified in `pom.xml`
 
 ## Once you have finished configuring your, we can move on to learning about SimpleStatements.                

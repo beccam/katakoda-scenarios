@@ -1,6 +1,14 @@
-Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to insert a user into that users table.
+Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to insert a user into that users table:
 
-To execute a CQL query, you create a *Statement* instance and pass it to *session.execute*.The driver provides various implementations of *Statement*. For this example, we are going to use a `SimpleStatement` to insert out user, adding the values separately.
+<pre style='color:#000000;background:#ffffff;'>CREATE <span style='color:#2a00ff; '>TABLE</span> <span style='color:#2a00ff; '>demo.users</span> (
+    lastname <span style='color:#2a00ff; '>text</span> <span style='color:#2a00ff; '>PRIMARY</span> <span style='color:#2a00ff; '>KEY</span>,
+    age <span style='color:#2a00ff; '>int</span>,
+    city <span style='color:#2a00ff; '>text</span>,
+    email <span style='color:#2a00ff; '>text</span>,
+    firstname <span style='color:#2a00ff; '>text</span>);
+</pre>
+
+To execute a CQL query, you create a *Statement* instance and pass it to `session.execute`.The driver provides various implementations of *Statement*. For this example, we are going to use a `SimpleStatement` to insert out user, adding the values separately.
 
  <summary style="color:teal">Example:</summary>
 ```
@@ -10,8 +18,10 @@ session.execute(
             .build());
 ```
 
-In the `main` method, we call the *setUser* method and with parameters
-`setUser(session, "Juilus", "Caesar", "juilus@example.com");``
+In the *main* method, we call the `setUser`method and with parameters"
+`setUser(session, "Juilus", "Caesar", "juilus@example.com");`
+
+The `setUser` method takes 3 parameters: `lastname`, `firstname` and `email`.
 
 Fill in the *setUser* method such the the user is inserted into the table
 <details>
@@ -25,7 +35,7 @@ Fill in the *setUser* method such the the user is inserted into the table
 </details>
 
 
-We will be using Maven to build and run our application. Make sure you are in the `quickstart` directory in your terminal.
+Make sure you are in the `quickstart` directory in your terminal.
 `cd quickstart`{{execute}}
 
 You can then run Maven to launch the program
