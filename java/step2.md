@@ -1,12 +1,12 @@
 Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to insert a user into that users table:
 
-<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">CREATE</span> <span style="color: #0000aa">TABLE</span> demo.users (
+<pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">CREATE</span> <span style="color: #0000aa">TABLE</span> demo.users (
     lastname <span style="color: #00aaaa">text</span> <span style="color: #0000aa">PRIMARY</span> <span style="color: #0000aa">KEY</span>,
     age <span style="color: #00aaaa">int</span>,
     city <span style="color: #00aaaa">text</span>,
     email <span style="color: #00aaaa">text</span>,
     firstname <span style="color: #00aaaa">text</span>);
-</pre></div>
+</pre>
 
 
 To execute a CQL query, you create a *Statement* instance and pass it to `session.execute`.The driver provides various implementations of *Statement*. For this example, we are going to use a `SimpleStatement` to insert out user, adding the values separately.
@@ -20,7 +20,8 @@ To execute a CQL query, you create a *Statement* instance and pass it to `sessio
 
 
 In the *main* method, we call the `setUser`method and with parameters"
-`setUser(session, "Juilus", "Caesar", "juilus@example.com");`
+<pre style="margin: 0; line-height: 125%">setUser<span style="font-weight: bold">(</span>session<span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Juilus&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Caesar&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;juilus@example.com&quot;</span><span style="font-weight: bold">);</span>
+</pre>
 
 The `setUser` method takes 3 parameters: `lastname`, `firstname` and `email`.
 
