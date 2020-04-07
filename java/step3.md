@@ -4,7 +4,7 @@ Next, will we fill in the `getUser` method. Using the `session.execute()` and an
 So within the `getUser` method, we will include code that:
  * Selects for the user we just inserted
  * Return the first row from the result set
- * Print out the first and last name of the user
+ * Print out the first and email address of the user
 
 <summary style="color:teal">Example:</summary>
 <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999988; font-style: italic">// Select for the user</span>
@@ -15,7 +15,7 @@ ResultSet rs <span style="font-weight: bold">=</span> session<span style="font-w
 <span style="color: #999988; font-style: italic">// Return the first element of ResultSet                        </span>
 Row row <span style="font-weight: bold">=</span> rs<span style="font-weight: bold">.</span><span style="color: #008080">one</span><span style="font-weight: bold">();</span>                  
 <span style="color: #999988; font-style: italic">// Print out the firstname and email</span>
-System<span style="font-weight: bold">.</span><span style="color: #008080">out</span><span style="font-weight: bold">.</span><span style="color: #008080">format</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;%s %d\n&quot;</span><span style="font-weight: bold">,</span> row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;firstname&quot;</span><span style="font-weight: bold">),</span> row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;email&quot;</span><span style="font-weight: bold">));</span>
+System<span style="font-weight: bold">.</span><span style="color: #008080">out</span><span style="font-weight: bold">.</span><span style="color: #008080">format</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;%s %s\n&quot;</span><span style="font-weight: bold">,</span> row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;firstname&quot;</span><span style="font-weight: bold">),</span> row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;email&quot;</span><span style="font-weight: bold">));</span>
 </pre></div>
 
 
@@ -32,7 +32,7 @@ Go ahead and fill in the `getUser` method that will select our user back out.
         <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValue</span><span style="font-weight: bold">(</span>lastname<span style="font-weight: bold">)</span>
         <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>                    
 Row row <span style="font-weight: bold">=</span> rs<span style="font-weight: bold">.</span><span style="color: #008080">one</span><span style="font-weight: bold">();</span>                  
-System<span style="font-weight: bold">.</span><span style="color: #008080">out</span><span style="font-weight: bold">.</span><span style="color: #008080">format</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;%s %d\n&quot;</span><span style="font-weight: bold">,</span> row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;firstname&quot;</span><span style="font-weight: bold">),</span> row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;email&quot;</span><span style="font-weight: bold">));</span>  
+System<span style="font-weight: bold">.</span><span style="color: #008080">out</span><span style="font-weight: bold">.</span><span style="color: #008080">format</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;%s %s\n&quot;</span><span style="font-weight: bold">,</span> row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;firstname&quot;</span><span style="font-weight: bold">),</span> row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;email&quot;</span><span style="font-weight: bold">));</span>  
 </pre></div>    
 </details>
 
