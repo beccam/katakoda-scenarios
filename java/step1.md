@@ -34,9 +34,7 @@ In the main method, augment the `CqlSession.builder()` to add:
 <details>
   <summary style="color:teal">Solution</summary>
 
-  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre class="file" data-target="clipboard" style="margin: 0; line-height: 125%">
-  </br>
-  CqlSession session <span style="font-weight: bold">=</span> CqlSession<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">()</span>
+  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">CqlSession session <span style="font-weight: bold">=</span> CqlSession<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">()</span>
     <span style="font-weight: bold">.</span><span style="color: #008080">addContactPoint</span><span style="font-weight: bold">(new</span> InetSocketAddress<span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;127.0.0.1&quot;</span><span style="font-weight: bold">,</span> <span style="color: #009999">9042</span><span style="font-weight: bold">))</span>
     <span style="font-weight: bold">.</span><span style="color: #008080">withKeyspace</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;demo&quot;</span><span style="font-weight: bold">)</span>
     <span style="font-weight: bold">.</span><span style="color: #008080">withLocalDatacenter</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;datacenter1&quot;</span><span style="font-weight: bold">)</span>
@@ -45,7 +43,7 @@ In the main method, augment the `CqlSession.builder()` to add:
 </details>
 
 We will be using Maven to build and run our application. Make sure you are in the quickstart directory in your terminal.
-cd quickstart{{execute}}
+`cd quickstart`{{execute}}
 
 You can then run Maven to launch the program
 `mvn compile exec:java -Dexec.mainClass=Main`{{execute}}.
