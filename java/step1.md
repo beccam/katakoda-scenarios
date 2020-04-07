@@ -13,13 +13,14 @@ Before we start executing any queries against a Cassandra, we need to setup an i
 `CqlSession.builder()` provides a fluent API to create an instance programmatically. With it you can explicitly add contact points, a datacenter name, and a keyspace name for your session to connect to.
 
  <summary style="color:teal">Example:</summary>
- ```
- CqlSession session = CqlSession.builder()
-    .addContactPoint(new InetSocketAddress("1.2.3.4", 9042))
-    .withKeyspace("SomeKS")
-    .withLocalDatacenter("dc1")
-    .build();
-```    
+
+ <pre style="color:#000000;background:#ffffff;"> CqlSession session <span style="color:#808030; ">=</span> CqlSession<span style="color:#808030; ">.</span>builder<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
+      <span style="color:#808030; ">.</span>addContactPoint<span style="color:#808030; ">(</span>new InetSocketAddress<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">1.2.3.4</span><span style="color:#800000; ">"</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">9042</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span>
+      <span style="color:#808030; ">.</span>withKeyspace<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">SomeKS</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span>
+      <span style="color:#808030; ">.</span>withLocalDatacenter<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">dc1</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span>
+      <span style="color:#808030; ">.</span>build<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span><span style="color:#800080; ">;</span>
+ </pre>
+
 
 In the main method, augment the `CqlSession.builder()` to add:
 * A contact point and InetSocket(`"127.0.0.1", 9042`)
