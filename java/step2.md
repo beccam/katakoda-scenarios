@@ -1,23 +1,23 @@
 Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to insert a user into that users table:
 
-<pre style='color:#000000;background:#ffffff;'>CREATE <span style='color:#2a00ff; '>TABLE</span> <span style='color:#2a00ff; '>demo.users</span> (
-    lastname <span style='color:#2a00ff; '>text</span> <span style='color:#2a00ff; '>PRIMARY</span> <span style='color:#2a00ff; '>KEY</span>,
-    age <span style='color:#2a00ff; '>int</span>,
-    city <span style='color:#2a00ff; '>text</span>,
-    email <span style='color:#2a00ff; '>text</span>,
-    firstname <span style='color:#2a00ff; '>text</span>);
-</pre>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">CREATE</span> <span style="color: #0000aa">TABLE</span> demo.users (
+    lastname <span style="color: #00aaaa">text</span> <span style="color: #0000aa">PRIMARY</span> <span style="color: #0000aa">KEY</span>,
+    age <span style="color: #00aaaa">int</span>,
+    city <span style="color: #00aaaa">text</span>,
+    email <span style="color: #00aaaa">text</span>,
+    firstname <span style="color: #00aaaa">text</span>);
+</pre></div>
+
 
 To execute a CQL query, you create a *Statement* instance and pass it to `session.execute`.The driver provides various implementations of *Statement*. For this example, we are going to use a `SimpleStatement` to insert out user, adding the values separately.
 
  <summary style="color:teal">Example:</summary>
-```
-<pre style='color:#000000;background:#f1f0f0;'>session<span style='color:#806030; '>.</span>execute<span style='color:#806030; '>(</span>
-    SimpleStatement<span style='color:#806030; '>.</span>builder<span style='color:#806030; '>(</span> <span style='color:#800000; '>"</span><span style='color:#e60000; '>INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?)</span><span style='color:#800000; '>"</span><span style='color:#806030; '>)</span>
-            <span style='color:#806030; '>.</span>addPositionalValues<span style='color:#806030; '>(</span><span style='color:#800000; '>"</span><span style='color:#e60000; '>Brutus</span><span style='color:#800000; '>"</span><span style='color:#806030; '>,</span> <span style='color:#800000; '>"</span><span style='color:#e60000; '>Marcus</span><span style='color:#800000; '>"</span><span style='color:#806030; '>,</span> <span style='color:#800000; '>"</span><span style='color:#e60000; '>marcus@example.com</span><span style='color:#800000; '>"</span><span style='color:#806030; '>)</span>
-            <span style='color:#806030; '>.</span>build<span style='color:#806030; '>(</span><span style='color:#806030; '>)</span><span style='color:#806030; '>)</span><span style='color:#806030; '>;</span>
-</pre>
-```
+ <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
+     SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span> <span style="color: #bb8844">&quot;INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?)&quot;</span><span style="font-weight: bold">)</span>
+             <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValues</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;Brutus&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Marcus&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;marcus@example.com&quot;</span><span style="font-weight: bold">)</span>
+             <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
+ </pre></div>
+
 
 In the *main* method, we call the `setUser`method and with parameters"
 `setUser(session, "Juilus", "Caesar", "juilus@example.com");`
