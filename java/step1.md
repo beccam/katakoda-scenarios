@@ -33,13 +33,13 @@ In the main method, augment the `CqlSession.builder()` to add:
 <details>
   <summary style="color:teal">Solution</summary>
 
-  <pre style="color:#000000;background:#ffffff;">  CqlSession session <span style="color:#808030; ">=</span> CqlSession<span style="color:#808030; ">.</span>builder<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
-        <span style="color:#808030; ">.</span>addContactPoint<span style="color:#808030; ">(</span>new InetSocketAddress<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">127.0.0.1</span><span style="color:#800000; ">"</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">9042</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span>
-        <span style="color:#808030; ">.</span>withKeyspace<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">demo</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span>
-        <span style="color:#808030; ">.</span>withLocalDatacenter<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">datacenter1</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span>
-        <span style="color:#808030; ">.</span>build<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
+  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">CqlSession session <span style="font-weight: bold">=</span> CqlSession<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">()</span>
+          <span style="font-weight: bold">.</span><span style="color: #008080">addContactPoint</span><span style="font-weight: bold">(new</span> InetSocketAddress<span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;127.0.0.1&quot;</span><span style="font-weight: bold">,</span> <span style="color: #009999">9042</span><span style="font-weight: bold">))</span>
+          <span style="font-weight: bold">.</span><span style="color: #008080">withKeyspace</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;demo&quot;</span><span style="font-weight: bold">)</span>
+          <span style="font-weight: bold">.</span><span style="color: #008080">withLocalDatacenter</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;datacenter1&quot;</span><span style="font-weight: bold">)</span>
+          <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">()</span>
+  </pre></div>
 
-  </pre>
 
 </details>
 
