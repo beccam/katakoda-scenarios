@@ -10,4 +10,4 @@ In this scenario, you will:
   * Delete the user from the table
 * Process CQL query results programmatically
 
-*ver 0.8*
+*ver 0.9*
