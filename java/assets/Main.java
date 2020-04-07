@@ -9,7 +9,7 @@ public class Main {
         // TO DO: Fill in contact point, keyspace, & data center
         try (CqlSession session = CqlSession.builder().build()) {
 
-            setUser(session, "Juilus", "Caesar", "juilus@example.com");
+            setUser(session, "Caesar", "Juilus", "juilus@example.com");
 
             getUser(session, "Caesar");
 
