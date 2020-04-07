@@ -32,10 +32,13 @@ The `setUser` method takes 3 parameters:
 
 Fill in the *setUser* method such the the user is inserted into the table
 <details>
-session.execute(
-    SimpleStatement.builder( "INSERT INTO users (lastname, firstname, email) VALUES (?,?,?)")
-            .addPositionalValues(lastname, firstname, email)
-            .build());
+  <summary style="color:teal">Solution</summary>
+  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
+       SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span> <span style="color: #bb8844">&quot;INSERT INTO users (lastname, firstname, email) VALUES (?,?,?)&quot;</span><span style="font-weight: bold">)</span>
+           <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValues</span><span style="font-weight: bold">(</span>lastname<span style="font-weight: bold">,</span> firstname<span style="font-weight: bold">,</span> email<span style="font-weight: bold">)</span>
+           <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
+  </pre></div>
+
 </details>
 
 
