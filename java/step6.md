@@ -6,7 +6,7 @@ Answer the following:
 [ ] CassSession
 [ ] Cluster
 
->>A A SimpleStatement is (check all that apply)<<
+>>A SimpleStatement is (check all that apply)<<
 [*] A simple implementation built directly from a character string.
 [ ] Good for queries that are used often.
 [*] Used for queries that are executed only once or a few times.
