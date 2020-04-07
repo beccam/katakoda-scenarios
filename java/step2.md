@@ -23,7 +23,10 @@ In the *main* method, we call the `setUser`method and with parameters"
 <pre style="margin: 0; line-height: 125%">setUser<span style="font-weight: bold">(</span>session<span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Juilus&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Caesar&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;juilus@example.com&quot;</span><span style="font-weight: bold">);</span>
 </pre>
 
-The `setUser` method takes 3 parameters: `lastname`, `firstname` and `email`.
+The `setUser` method takes 3 parameters: 
+*`lastname`
+*`firstname`
+*`email`.
 
 Fill in the *setUser* method such the the user is inserted into the table
 <details>
