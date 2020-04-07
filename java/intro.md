@@ -1,4 +1,4 @@
-*The Datastax Java Driver for Apache Cassandra™ A modern, feature-rich and highly tunable Java client library for Apache Cassandra® (2.1+) and DataStax Enterprise (4.7+), and DataStax Apollo, using exclusively Cassandra’s binary protocol and Cassandra Query Language (CQL) v3.*
+*The Datastax Java Driver for Apache Cassandra™ is a modern, feature-rich and highly tunable Java client library for Apache Cassandra® (2.1+) and DataStax Enterprise (4.7+), and DataStax Astra, using exclusively Cassandra’s binary protocol and Cassandra Query Language (CQL) v3.*
 
 In this scenario, you will:
 

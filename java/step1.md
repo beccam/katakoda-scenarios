@@ -30,11 +30,13 @@ In the main method, augment the `CqlSession.builder()` to add:
   <summary style="color:teal">Solution</summary>
 
   <pre style="color:#000000;background:#ffffff;">  CqlSession session <span style="color:#808030; ">=</span> CqlSession<span style="color:#808030; ">.</span>builder<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
-                  <span style="color:#808030; ">.</span>addContactPoint<span style="color:#808030; ">(</span>new InetSocketAddress<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">127.0.0.1</span><span style="color:#800000; ">"</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">9042</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span>
-                  <span style="color:#808030; ">.</span>withKeyspace<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">demo</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span>
-                  <span style="color:#808030; ">.</span>withLocalDatacenter<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">datacenter1</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span>
-                  <span style="color:#808030; ">.</span>build<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
-  </pre>      
+        <span style="color:#808030; ">.</span>addContactPoint<span style="color:#808030; ">(</span>new InetSocketAddress<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">127.0.0.1</span><span style="color:#800000; ">"</span><span style="color:#808030; ">,</span> <span style="color:#008c00; ">9042</span><span style="color:#808030; ">)</span><span style="color:#808030; ">)</span>
+        <span style="color:#808030; ">.</span>withKeyspace<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">demo</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span>
+        <span style="color:#808030; ">.</span>withLocalDatacenter<span style="color:#808030; ">(</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">datacenter1</span><span style="color:#800000; ">"</span><span style="color:#808030; ">)</span>
+        <span style="color:#808030; ">.</span>build<span style="color:#808030; ">(</span><span style="color:#808030; ">)</span>
+
+  </pre>
+
 </details>
 
 </br>
