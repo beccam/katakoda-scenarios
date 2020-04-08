@@ -42,4 +42,6 @@ We will be using Maven to build and run our application. Make sure you are in th
 You can then run Maven to launch the program
 `mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}   
 
+</br>
+
 ## Great! You've just learned how to SELECT and print out a row. Let's move on to learning how to perform an UPDATE.         

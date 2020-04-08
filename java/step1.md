@@ -50,4 +50,6 @@ You can then run Maven to launch the program
 
 Maven will get busy gathering the dependencies specified in `pom.xml`
 
+</br>
+
 ## Once you have finished configuring your, we can move on to learning about SimpleStatements.                

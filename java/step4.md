@@ -27,4 +27,6 @@ Fill in `updateUser` such the the user is inserted into the table
 You can then run Maven to launch the program from the `quickstart` directory.
 `mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}  
 
+</br>
+
 ## You're almost there! Coming up, how to DELETE a row from a table

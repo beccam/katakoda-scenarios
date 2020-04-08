@@ -50,4 +50,6 @@ Make sure you are in the `quickstart` directory in your terminal.
 You can then run Maven to launch the program
 `mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}
 
+</br>
+
 ## Up next, we will run a query to select our user back out!
