@@ -20,11 +20,11 @@ Fill in `updateUser` such the the user is inserted into the table
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre class="file" data-target="clipboard" style="margin: 0; line-height: 125%">  session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
       SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;UPDATE users SET email =?  WHERE lastname =? &quot;</span><span style="font-weight: bold">)</span>
           <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValues</span><span style="font-weight: bold">(</span>email<span style="font-weight: bold">,</span> lastname<span style="font-weight: bold">)</span>
-          <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">();</span>
+          <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
 </pre></div>      
 </details>
 
 You can then run Maven to launch the program from the `quickstart` directory.
-`mvn compile exec:java -Dexec.mainClass=Main`{{execute}}  
+`mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}  
 
 ## You're almost there! Coming up, how to DELETE a row from a table

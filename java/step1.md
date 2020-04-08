@@ -46,7 +46,7 @@ We will be using Maven to build and run our application. Make sure you are in th
 `cd quickstart`{{execute}}
 
 You can then run Maven to launch the program
-`mvn compile exec:java -Dexec.mainClass=Main`{{execute}}.
+`mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}.
 
 Maven will get busy gathering the dependencies specified in `pom.xml`
 

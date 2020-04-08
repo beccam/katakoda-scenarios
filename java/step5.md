@@ -25,7 +25,7 @@ Fill in `deleteUser` such the the user is inserted into the table.
 </details>
 
 Run Maven to launch the program from the `quickstart` directory.
-`mvn compile exec:java -Dexec.mainClass=Main`{{execute}}  
+`mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}  
 
 </br>
 
