@@ -43,7 +43,7 @@ In the main method, augment the `CqlSession.builder()` to add:
 </details>
 
 We will be using Maven to build and run our application. Make sure you are in the quickstart directory in your terminal.
-`cd quickstart`{{execute}}
+`cd ~/quickstart`{{execute}}
 
 You can then run Maven to launch the program
 `mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}.
