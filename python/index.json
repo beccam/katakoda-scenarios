@@ -11,7 +11,7 @@
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Start the Python Interactive Shell",
         "text": "step1.md"
       },
       {
