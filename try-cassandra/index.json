@@ -11,15 +11,15 @@
     },
     "steps": [
       {
-        "title": "CREATE KEYSPACE",
+        "title": "Create a keyspace",
         "text": "step1.md"
       },
       {
-        "title": "DESCRIBE KEYSPACES",
+        "title": "Describe Keyspaces",
         "text": "step2.md"
       },
       {
-        "title": "CREATE TABLE",
+        "title": "Create a table",
         "text": "step3.md"
       },
       {
