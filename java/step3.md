@@ -26,16 +26,16 @@ Have a look at `main` method, where we call the `getUser` method, selecting the 
 
 Go ahead and fill in the `getUser` method that will select our user back out.
 <details>
-  <summary style="color:teal">Solution</summary>
-  <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre class="file" data-target="clipboard" style="margin: 0; line-height: 125%">ResultSet rs <span style="font-weight: bold">=</span> session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
-          SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;SELECT * FROM users WHERE lastname=?&quot;</span><span style="font-weight: bold">)</span>
-              <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValue</span><span style="font-weight: bold">(</span>lastname<span style="font-weight: bold">)</span>
-              <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
-  Row row <span style="font-weight: bold">=</span> rs<span style="font-weight: bold">.</span><span style="color: #008080">one</span><span style="font-weight: bold">();</span>
-  System<span style="font-weight: bold">.</span><span style="color: #008080">out</span><span style="font-weight: bold">.</span><span style="color: #008080">format</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;%s %s\n&quot;</span><span style="font-weight: bold">,</span>
-  row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;firstname&quot;</span><span style="font-weight: bold">),</span>
-  row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;email&quot;</span><span style="font-weight: bold">));</span>
-  </pre></div>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre class="file" data-target="clipboard" style="margin: 0; line-height: 125%">ResultSet rs <span style="font-weight: bold">=</span> session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
+        SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;SELECT * FROM users WHERE lastname=?&quot;</span><span style="font-weight: bold">)</span>
+            <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValue</span><span style="font-weight: bold">(</span>lastname<span style="font-weight: bold">)</span>
+            <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
+Row row <span style="font-weight: bold">=</span> rs<span style="font-weight: bold">.</span><span style="color: #008080">one</span><span style="font-weight: bold">();</span>
+System<span style="font-weight: bold">.</span><span style="color: #008080">out</span><span style="font-weight: bold">.</span><span style="color: #008080">format</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;%s %s\n&quot;</span><span style="font-weight: bold">,</span>
+row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;firstname&quot;</span><span style="font-weight: bold">),</span>
+row<span style="font-weight: bold">.</span><span style="color: #008080">getString</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;email&quot;</span><span style="font-weight: bold">));</span>
+</pre></div>
+
 
 </details>
 
