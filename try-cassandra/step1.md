@@ -1,6 +1,3 @@
-Cassandra Query Language (CQL) offers a model close to SQL in the sense that data is put in tables containing rows of columns.
-For that reason, when used in this scenario, these terms (tables, rows and columns) have the same definition than they have in SQL. Isn't that helpful?
-
 Let's first start learning CQL by creating a keyspace, using the `CREATE KEYSPACE` command.
 
 A keyspace is a way to logically group a collection of database objects together, such as:
