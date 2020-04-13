@@ -2,8 +2,6 @@ Now that we have created an instance of *CqlSession* to connect to Cassandra, we
 
 <pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">CREATE</span> <span style="color: #0000aa">TABLE</span> demo.users (
     lastname <span style="color: #00aaaa">text</span> <span style="color: #0000aa">PRIMARY</span> <span style="color: #0000aa">KEY</span>,
-    age <span style="color: #00aaaa">int</span>,
-    city <span style="color: #00aaaa">text</span>,
     email <span style="color: #00aaaa">text</span>,
     firstname <span style="color: #00aaaa">text</span>);
 </pre>
