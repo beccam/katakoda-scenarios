@@ -11,31 +11,31 @@
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "CREATE KEYSPACE",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "DESCRIBE KEYSPACES",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "CREATE TABLE",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "CRUD Operations: INSERT",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "CRUD Operations: SELECT",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "CRUD Operations: UPDATE",
         "text": "step6.md"
       },
       {
-        "title": "Step 7",
+        "title": "CRUD Operations: DELETE",
         "text": "step7.md"
       }
     ],
