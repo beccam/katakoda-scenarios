@@ -12,7 +12,7 @@ Answer the following:
 [*] Used for queries that are executed only once or a few times.
 [ ] Obtained by binding values to a prepared query.
 
->>When we we use execute to send a query to Cassandra, a <blank> is returned<<
+>>When we use execute to send a query to Cassandra, a _______ is returned<<
 [ ] SimpleStatement
 [ ] Row
 [*] ResultSet
