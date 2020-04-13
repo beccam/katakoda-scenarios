@@ -1,4 +1,4 @@
-Say our user has a wants to change their email. We create the `updateUser` method to update the user's email address. Within the `updateUser` method, `execute()` and `UPDATE` that allows it to do just that.
+Say our user has a wants to change their email. We create the `updateUser` method to update the user's email address. Within the `updateUser` method, `execute()` an `UPDATE` that allows it to do just that.
 
 <summary style="color:teal">Example:</summary>
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
@@ -8,13 +8,13 @@ Say our user has a wants to change their email. We create the `updateUser` metho
 </pre></div>
 
 
-Look at main method, where we call the `updateUser` method, selecting the user by their lastname. We then select for the user with the `getUser` to see if our change worked.
+Look at the `main` method, where we call the `updateUser` method, selecting the user by their lastname. We then select for the user with the `getUser` to see if our change worked.
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">updateUser<span style="font-weight: bold">(</span>session<span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;jc@example.com&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Caesar&quot;</span><span style="font-weight: bold">);</span>
 
 getUser<span style="font-weight: bold">(</span>session<span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Caesar&quot;</span><span style="font-weight: bold">);</span>
 </pre></div>
 
-Fill in `updateUser` such the the user is inserted into the table
+Fill in `updateUser` such that the the user is inserted into the table
 <details>
   <summary style="color:teal">Solution</summary>
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre class="file" data-target="clipboard" style="margin: 0; line-height: 125%">  session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
