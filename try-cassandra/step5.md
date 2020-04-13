@@ -1,3 +1,3 @@
-SELECT QUERY
+Now use a `SELECT` statement to retrieve your row of data from the table.
 
-SELECT * FROM
+`SELECT * FROM users;`{execute}

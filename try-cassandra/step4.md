@@ -1,5 +1,5 @@
-Cassandra CRUD Operation stands for Create, Update, Read and Delete. These operations are used to manipulate data in Cassandra.
+In a production database, inserting columns and column values programmatically is more practical than using cqlsh, but often, testing queries using this SQL-like shell is very convenient.
 
-Let's create a row of user data for our table. Manually insert a single row into the table using the INSERT statement.
+To insert simple data into the table `demo.users`, use the INSERT command. This example inserts a single record into the table.
 
 `INSERT INTO users (lastname, email, firstname) VALUES (?,?,?)`{{execute}}
