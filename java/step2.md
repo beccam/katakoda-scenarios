@@ -13,7 +13,7 @@ To execute a CQL query, you create a *Statement* instance and pass it to `sessio
 
  <summary style="color:teal">Example:</summary>
  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
-     SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span> <span style="color: #bb8844">&quot;INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?)&quot;</span><span style="font-weight: bold">)</span>
+     SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span> <span style="color: #bb8844">&quot;INSERT INTO users (lastname, email, firstname) VALUES (?,?,?)&quot;</span><span style="font-weight: bold">)</span>
          <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValues</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;Brutus&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Marcus&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;marcus@example.com&quot;</span><span style="font-weight: bold">)</span>
          <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
  </pre></div>
