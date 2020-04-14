@@ -1,6 +1,6 @@
 Let's first start learning CQL by creating a keyspace, using the `CREATE KEYSPACE` command.
 
-`CREATE KEYSPACE killrvideo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};`{{execute}}
+`CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};`{{execute}}
 
 A keyspace is a way to logically group a collection of database objects together, such as:
  * tables
