@@ -23,19 +23,19 @@
         "text": "step3.md"
       },
       {
-        "title": "CRUD Operations: INSERT",
+        "title": "Insert a user",
         "text": "step4.md"
       },
       {
-        "title": "CRUD Operations: SELECT",
+        "title": "Select a user back out",
         "text": "step5.md"
       },
       {
-        "title": "CRUD Operations: UPDATE",
+        "title": "Update a row of user data",
         "text": "step6.md"
       },
       {
-        "title": "CRUD Operations: DELETE",
+        "title": "Delete a user",
         "text": "step7.md"
       }
     ],

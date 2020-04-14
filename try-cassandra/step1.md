@@ -10,6 +10,6 @@ A keyspace is a way to logically group a collection of database objects together
 
 This is similar concept to the database or namespace used in relational databases.
 
-In addition, the keyspace also controls the replication behavior for all of the data stored in the keyspace. You'll want to create different keyspaces if you want specific data to be replicated differently.
+In addition, the keyspace also controls the replication behavior for all of the data stored in the keyspace.
 
 <p><span  style="color:green">***ProTip:***</span> *You can use the **Tab** key in *cqlsh* to auto-complete or suggest the next part of your command, as you type.*</p>

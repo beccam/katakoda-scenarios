@@ -1,11 +1,11 @@
 Use the `UPDATE`  command to modify one or more column values to a row in a table.
 
-Now we are going to update our user's email address:
+Say our user has changed their email address, now we are going to have to update their information.
 
-UPDATE users SET email = "jc@example.com"  WHERE lastname = "jc@example.com"
+`UPDATE users SET email = "jc@example.com"  WHERE lastname = "jc@example.com"`{{execute}}
 
 UPDATE writes one or more column values to a row in a table.
 
-Assign new values to the row's columns in the SET clause.
+Use the SELECT command again to see the change.
 
-The WHERE clause specifies the row or rows to be updated. To specify a row, the WHERE clause must provide a value for each column of the row's primary key.
+`SELECT * FROM users;`{{execute}}
