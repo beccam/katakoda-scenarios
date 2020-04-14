@@ -1,4 +1,4 @@
-Before we can start executing any queries against a Cassandra, we need to setup an instance of `Cluster`. As the name suggests, you will typically have one instance of `Cluster` for each Cassandra cluster you want to interact with.
+Before we can start executing any queries against a Cassandra, we need to setup an instance of `Cluster`. It is the main class to use when interacting with a Cassandra cluster. As the name suggests, you will typically have one instance of `Cluster` for each Cassandra cluster you want to interact with.
 
 The simplest way to create a Cluster is like this:
 
@@ -12,4 +12,3 @@ Instantiating a Cluster does not actually connect us to any nodes. To establish 
 ```
 session = cluster.connect()
 ```{{execute}}
-

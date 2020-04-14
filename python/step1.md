@@ -6,4 +6,6 @@ Wait for Cassandra to finish starting up, this shouldn't take long! When it is f
 
  `python`{{execute}}:
 
-Now that the interpreter is ready, let's create an instance of *Cluster* 
+</br>
+
+##vNow that the interpreter is ready, let's create an instance of *Cluster*
