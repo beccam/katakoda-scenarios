@@ -8,15 +8,12 @@ Say our user has a wants to change their email. We create the `updateUser` metho
 </pre></div>
 
 
-Look at the `main` method, where we call the `updateUser` method, selecting the user by their lastname. Uncomment the code that calls the  `selectUser` method after `updateUser` is called. This way we can see if our change worked.
+Look at the `main` method, where we call the `updateUser` method, selecting the user by their lastname.  
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">updateUser<span style="font-weight: bold">(</span>session<span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;jc@example.com&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Caesar&quot;</span><span style="font-weight: bold">);</span>
 
-System<span style="font-weight: bold">.</span><span style="color: #008080">out</span><span style="font-weight: bold">.</span><span style="color: #008080">print</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;after update: &quot;</span><span style="font-weight: bold">);</span>
-getUser<span style="font-weight: bold">(</span>session<span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Caesar&quot;</span><span style="font-weight: bold">);</span>
 </pre></div>
 
-
-Fill in `updateUser` such that the the user is inserted into the table
+Fill in `updateUser` such that the the user is inserted into the table. Notice that `getUser` is also called from the `updateUser` method. This this so we can see if our update worked.
 <details>
   <summary style="color:teal">Solution</summary>
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre class="file" data-target="clipboard" style="margin: 0; line-height: 125%">  session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
