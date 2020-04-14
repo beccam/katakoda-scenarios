@@ -15,8 +15,6 @@ public class Main {
 
             updateUser(session, "jc@example.com", "Caesar");
 
-            getUser(session, "Caesar");
-
             deleteUser(session, "Caesar");
 
         }
@@ -39,6 +37,8 @@ public class Main {
     private static void updateUser(CqlSession session, String email, String lastname) {
 
         //TO DO: execute SimpleStatement that updates the email of one user
+
+        getUser(session, lastname);
     }
 
     private static void deleteUser(CqlSession session, String lastname) {
