@@ -5,6 +5,7 @@ In this scenario, you will:
   * Insert a user into a table
   * Select that user back out
   * Update the user's age
-  * Delete the user from the table 
+  * Delete the user from the table
 * Process CQL query results programmatically
 
+ver 0.1
