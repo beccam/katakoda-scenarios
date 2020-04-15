@@ -8,7 +8,7 @@ while [ `grep "Starting listening for CQL clients" apache-cassandra-3.11.6/logs/
    sleep 15
 done
 apache-cassandra-3.11.6/bin/cqlsh -e "CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};"
-apache-cassandra-3.11.6/bin/cqlsh -e "CREATE TABLE demo.users (lastname text PRIMARY KEY, age int, city text, email text, firstname text);"
+apache-cassandra-3.11.6/bin/cqlsh -e "CREATE TABLE demo.users (lastname text PRIMARY KEY, firstname text, email text,);"
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
 npm install cassandra-driver

@@ -11,7 +11,7 @@
     },
     "steps": [
       {
-        "title": "Set up quickstart.js",
+        "title": "Start the Node.js REPL",
         "text": "step1.md"
       },
       {
