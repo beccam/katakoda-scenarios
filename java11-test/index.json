@@ -52,6 +52,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu1604"
+    "imageid": "ubuntu"
   }
 }
