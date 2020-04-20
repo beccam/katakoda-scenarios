@@ -11,4 +11,4 @@ In this scenario, you will:
   * Delete the user from the table
 * Process CQL query results programmatically
 
-![snake](/ds_dev/scenarios/python/assets/snake.png/assets/snake.png)
+![snake](https://www.katacoda.com/ds_dev/scenarios/python/scenarios/python/assets/snake.png/assets/snake.png)
