@@ -50,4 +50,4 @@ You can then run Maven to launch the program
 
 </br>
 
-## Up next, we will run a query to select our user back out!
+## Up next, we will run a SELECT query to get our user back out!

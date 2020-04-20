@@ -29,4 +29,4 @@ Run Maven to launch the program from the `quickstart` directory.
 
 </br>
 
-## Awesome! Now you know how to perform basic CRUD operations with the DataStax Driver for Apache Cassandra™
+## Awesome! Now you know how to perform basic CRUD operations with the DataStax Driver for Apache Cassandra™.
