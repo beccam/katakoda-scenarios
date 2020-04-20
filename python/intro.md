@@ -11,4 +11,4 @@ In this scenario, you will:
   * Delete the user from the table
 * Process CQL query results programmatically
 
-ver 0.6
+![snake](/assets/snake.png)
