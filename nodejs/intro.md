@@ -1,3 +1,5 @@
+The DataStax Node.js Driver for Apache Cassandra™ is a modern, feature-rich and highly tunable Node.js client library for Apache Cassandra and DSE using exclusively Cassandra’s binary protocol and Cassandra Query Language (CQL).
+
 In this scenario, you will:
 
 * Connect to an Apache Cassandra™ instance with the DataStax Node.js driver
@@ -8,4 +10,4 @@ In this scenario, you will:
   * Delete the user from the table
 * Process CQL query results programmatically
 
-ver 0.2
+ver 0.3
