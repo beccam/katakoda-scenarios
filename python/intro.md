@@ -11,6 +11,6 @@ In this scenario, you will:
   * Delete the user from the table
 * Process CQL query results programmatically
 
-![snake](/ds_dev/scenarios/python/images/snake.png)
+![snake](/ds_dev/scenarios/python/snake.png)
 
 ver 0.5
