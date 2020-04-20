@@ -12,3 +12,5 @@ In this scenario, you will:
 * Process CQL query results programmatically
 
 ![snake](/ds_dev/scenarios/python/snake.png)
+
+ver 0.3
