@@ -1,0 +1,59 @@
+{
+  "title": "Try It Out: DataStax Java Driver for Apache Cassandra™",
+  "description": "Learn how to perfrom CRUD operations with the DataStax Java Driver for Apache Cassandra™",
+  "difficulty": "Beginner",
+  "time": "5 - 10 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+            {"file": "pom.xml", "target": "quickstart"},
+            {"file": "Main.java", "target": "quickstart/src/main/java"},
+            {"file": "logback.xml", "target": "quickstart/src/main/resources"},
+            {"file": "application.conf", "target": "quickstart/src/main/resources"},
+            {"file": ".mavenrc", "target": "~/"}
+        ]
+    },
+    "steps": [
+      {
+        "title": "Creating a CqlSession Instance",
+        "text": "step1.md"
+      },
+      {
+        "title": "SimpleStatements: Insert a user",
+        "text": "step2.md"
+      },
+      {
+        "title": "SimpleStatements: Select a user",
+        "text": "step3.md"
+      },
+      {
+        "title": "SimpleStatements: Update a user",
+        "text": "step4.md"
+      },
+      {
+        "title": "SimpleStatements: Delete a user",
+        "text": "step5.md"
+      },
+      {
+        "title": "Quiz",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "courseData": "background.sh",
+      "code": "foreground.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/quickstart"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
