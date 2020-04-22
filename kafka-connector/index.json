@@ -6,7 +6,7 @@
   "details": {
     "assets": {
         "host01": [
-           
+
         ]
     },
     "steps": [
@@ -52,6 +52,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "ubuntu"
   }
 }
