@@ -50,8 +50,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
-    "uieditorpath": "/root/quickstart"
+    "uilayout": "terminal",
   },
   "backend": {
     "imageid": "ubuntu"
