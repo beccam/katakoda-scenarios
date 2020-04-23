@@ -1,8 +1,8 @@
 First, lets start up Datastax enterprise
-```
-tar xzf dse-6.8.tar.gz;
-./dse-6.8.0/bin/dse cassandra -R
-```{{execute}}
+
+`tar xzf dse-6.8.tar.gz`{{execute}}
+
+`./dse-6.8.0/bin/dse cassandra -R`{{execute}}
 
 `⌘+C; clear`{{execute}}
 
