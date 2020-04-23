@@ -1,6 +1,10 @@
+Kafka also has something called a zookeeper, which runs on each broker and ensures that it is healthy, that it can communicate with the cluster, and that it can perform assigned tasks.
+
+The zookeeper must be running in order for the broker to receive or stream messages.
+
 Start Zookeeper
 `kafka/bin/zookeeper-server-start.sh kafka/config/zookeeper.properties &> zookeeper_start.log &`{{execute}}
 
+Next, let's start the kafka broker (server)
 
-Start Kafka
-`kafka/bin/kafka-server-start.sh kafka/config/server.properties &> kafka_start.log &`
+`kafka/bin/kafka-server-start.sh kafka/config/server.properties &> kafka_start.log &`{{execute}}

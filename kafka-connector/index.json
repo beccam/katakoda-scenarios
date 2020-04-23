@@ -1,5 +1,5 @@
 {
-  "title": "Try It Out: DataStax Apache Kafka™ Connector",
+  "title": "DataStax Apache Kafka™ Connector Quickstart",
   "description": "Learn how to use the Kafka Connector to synchronize records from a Kafka topic with table rows in your Cassandra database",
   "difficulty": "Beginner",
   "time": "15 minutes",
