@@ -13,9 +13,11 @@ Create a directory for the Kafka installation:
 Unpack the tarball into the `kafka` directory:
 `tar -xzf kafka_2.11-2.2.2.tgz -C kafka --strip-components=1`{{execute}}
 
-Download the Datastax Kafka Connector and unpack it:
+Download the Datastax Kafka Connector:
 `wget https://downloads.datastax.com/kafka/kafka-connect-dse.tar.gz`{{execute}}
 
+Creat the kafka-connect directory:
 `mkdir kafka-connect`{{execute}}
 
+Unpack the connector:
 `tar -xzf kafka-connect-dse.tar.gz -C kafka-connect --strip-components=1`{{execute}}
