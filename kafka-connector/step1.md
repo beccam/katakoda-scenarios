@@ -1,4 +1,4 @@
-Apache Kafka™ is a distributed streaming message queue. Producers publish messages to a topic, the broker stores them in the order received, and consumers (DataStax Connector) subscribe and read messages from the topic.
+Apache Kafka™ is a distributed streaming message queue. Producers publish messages to a topic, the broker(or Kafka server) stores them in the order received, and consumers (DataStax Connector) subscribe and read messages from the topic.
 
 ![](/assets/messagelog.png.png)
 
@@ -10,3 +10,10 @@ Create a directory for the Kafka installation
 
 Unpack the tarball into the `kafka` directory
 `tar -xzf kafka_2.11-2.2.2.tgz -C kafka --strip-components=1`{{execute}}
+
+Download the Datastax Kafka Connector and unpack it
+`wget https://downloads.datastax.com/kafka/kafka-connect-dse.tar.gz`{{execute}}
+
+`mkdir kafka-connect`
+
+`tar -xzf -C kafka-connect`

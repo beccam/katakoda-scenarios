@@ -1,4 +1,4 @@
-Kafka also has something called a zookeeper, which runs on each broker and ensures that it is healthy, that it can communicate with the cluster, and that it can perform assigned tasks.
+Kafka uses Zookeeper for cluster management. It runs on each broker and ensures that it is healthy, that it can communicate with the cluster, and that it can perform assigned tasks.
 
 The zookeeper must be running in order for the broker to receive or stream messages.
 

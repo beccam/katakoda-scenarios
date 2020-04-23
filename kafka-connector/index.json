@@ -6,7 +6,9 @@
   "details": {
     "assets": {
         "host01": [
-            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
+            {"file": "connect-standalone.properties", "target": "~/"},
+            {"file": "dse-sink.properties", "target": "~/"}
 
         ]
     },
