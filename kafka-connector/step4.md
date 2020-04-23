@@ -19,11 +19,11 @@ cd kafka-example/stockticks; mvn clean compile exec:java -Dexec.mainClass=com.da
 
 You should see messages like this
 ```
-2018-09-11 21:26:00 INFO  TickProducer:83 - Successfully created 15086 Kafka records
-2018-09-11 21:26:05 INFO  TickProducer:83 - Successfully created 190559 Kafka records
-2018-09-11 21:26:10 INFO  TickProducer:83 - Successfully created 568748 Kafka records
-2018-09-11 21:26:15 INFO  TickProducer:83 - Successfully created 993746 Kafka records
-2018-09-11 21:26:20 INFO  TickProducer:83 - Successfully created 1608405 Kafka records
+2020-04-23 14:05:15 INFO  TickProducer:83 - Successfully created 33536 Kafka records
+2020-04-23 14:05:20 INFO  TickProducer:83 - Successfully created 281611 Kafka records
+2020-04-23 14:05:25 INFO  TickProducer:83 - Successfully created 754991 Kafka records
+2020-04-23 14:05:30 INFO  TickProducer:83 - Successfully created 1217310 Kafka records
+2020-04-23 14:05:35 INFO  TickProducer:83 - Successfully created 1900916 Kafka records
 ```
 
 `kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --topic tick-stream-json --max-messages 10`{{execute}}

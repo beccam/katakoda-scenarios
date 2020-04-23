@@ -1,3 +1,9 @@
+First, lets start up Datastax enterprise
+`./dse-6.8.0/bin/dse cassandra -R`{{execute}}
+
+{{⌘+C; clear}}{{execute}}
+
+
 
 Download the Apache Kafka tarball:
 `wget http://apache.spinellicreations.com/kafka/2.2.2/kafka_2.11-2.2.2.tgz`{{execute}}
