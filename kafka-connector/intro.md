@@ -4,4 +4,5 @@ Since a lot of our customers already use Apache Kafka with datstax enterprise, t
 
 The result is a connector that’s simple to use, feature rich, highly performant, and a real time-saver.
 
-v1
+
+![](assets/kafkaOverview.png)
