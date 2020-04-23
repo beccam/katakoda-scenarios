@@ -18,4 +18,4 @@ Download the Datastax Kafka Connector and unpack it:
 
 `mkdir kafka-connect`{{execute}}
 
-`tar -xzf -C kafka-connect`{{execute}}
+`tar -xzf kafka-connect-dse.tar.gz -C kafka-connect --strip-components=1`{{execute}}

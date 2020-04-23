@@ -1,4 +1,4 @@
-Next we are going prepare our schema for the stockticks that will be coming into DSE.
+Head back to the tab where DSE had been starting up. Next we are going prepare our schema for the stockticks that will be coming into DSE.
 
 Open `cqlsh`
 
@@ -19,3 +19,5 @@ CREATE TABLE stocks.ticks (
 ```{{execute}}
 
 Once the keyspace and table have been created, you can `exit`{{execute}} *cqlsh*
+
+Return to the tab where we had been compiling 

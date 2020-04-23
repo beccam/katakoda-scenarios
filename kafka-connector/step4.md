@@ -1,6 +1,6 @@
-Now let’s discuss producers and consumers.
+Now let’s discuss producers and consumers more.
 
-A producer is a client that sends events to Kafka. A consumer is a client that consumes those events.
+A producer is a client that sends events to Kafka, such as the "Stocktick Producer" we will be setting up shortly. A consumer is a client that consumes those events.
 
 Producers publish messages to a topic, the broker(Kafka server) stores them in the order received, and consumers (DataStax Connector) subscribe and read messages from the topic.
 
