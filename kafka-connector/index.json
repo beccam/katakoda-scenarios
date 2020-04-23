@@ -1,5 +1,5 @@
 {
-  "title": "Getting Started with the DataStax Apache Kafka™ Connector",
+  "title": "Try It Out: DataStax Apache Kafka™ Connector",
   "description": "Learn how to use the Kafka Connector to synchronize records from a Kafka topic with table rows in your Cassandra database",
   "difficulty": "Beginner",
   "time": "15 minutes",
@@ -12,23 +12,23 @@
     },
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Install Apache Kafka",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Start Apache Kafka",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Create Topic",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Setup and Run Producer",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Setup Cassandra schema",
         "text": "step5.md"
       },
       {
