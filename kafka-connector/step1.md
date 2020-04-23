@@ -7,15 +7,15 @@ Before you begin, wait for DSE to finsih starting up.
 Download the Apache Kafka tarball:
 `wget http://apache.spinellicreations.com/kafka/2.2.2/kafka_2.11-2.2.2.tgz`{{execute}}
 
-Create a directory for the Kafka installation
-`mkdir kafka`
+Create a directory for the Kafka installation:
+`mkdir kafka`{{execute}}
 
-Unpack the tarball into the `kafka` directory
+Unpack the tarball into the `kafka` directory:
 `tar -xzf kafka_2.11-2.2.2.tgz -C kafka --strip-components=1`{{execute}}
 
-Download the Datastax Kafka Connector and unpack it
+Download the Datastax Kafka Connector and unpack it:
 `wget https://downloads.datastax.com/kafka/kafka-connect-dse.tar.gz`{{execute}}
 
-`mkdir kafka-connect`
+`mkdir kafka-connect`{{execute}}
 
-`tar -xzf -C kafka-connect`
+`tar -xzf -C kafka-connect`{{execute}}
