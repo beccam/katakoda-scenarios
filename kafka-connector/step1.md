@@ -1,6 +1,8 @@
 Apache Kafka™ is a distributed streaming message queue. Producers publish messages to a topic, the broker(or Kafka server) stores them in the order received, and consumers (DataStax Connector) subscribe and read messages from the topic.
 
-![](/assets/messagelog.png.png)
+![](assets/messagelog.png.png)
+
+Before you begin, wait for DSE to finsih starting up.
 
 Download the Apache Kafka tarball:
 `wget http://apache.spinellicreations.com/kafka/2.2.2/kafka_2.11-2.2.2.tgz`{{execute}}
