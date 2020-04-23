@@ -1,3 +1,3 @@
 Learn about the Kafka connector
 
-v5
+v6
