@@ -6,10 +6,10 @@ show_progress()
   local -r delay='0.75'
   local spinstr='\|/-'
   local temp
-  echo -n "Starting up Cassandra..."
-  while true; do 
+  echo -n "Starting up DSE..."
+  while true; do
     sudo grep -i "done" /opt/katacoda-background-finished &> /dev/null
-    if [[ "$?" -ne 0 ]]; then     
+    if [[ "$?" -ne 0 ]]; then
       temp="${spinstr#?}"
       printf " [%c]  " "${spinstr}"
       spinstr=${temp}${spinstr%"${temp}"}
@@ -21,7 +21,7 @@ show_progress()
   done
   printf "    \b\b\b\b"
   echo ""
-  echo "Cassandra has started!"
+  echo "DSE has started!"
 }
 
 show_progress
