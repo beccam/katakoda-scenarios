@@ -1,8 +1,8 @@
 {
-  "title": "Kafka-connector",
-  "description": "WIP",
+  "title": "Getting Started with the DataStax Apache Kafka™ Connector",
+  "description": "Learn how to use the Kafka Connector to synchronize records from a Kafka topic with table rows in your Cassandra database",
   "difficulty": "Beginner",
-  "time": "5 - 10 minutes",
+  "time": "15 minutes",
   "details": {
     "assets": {
         "host01": [

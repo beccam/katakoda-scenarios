@@ -1,3 +1,6 @@
-Now try the command `DESCRIBE KEYSPACES;`
+Start Zookeeper
+`kafka/bin/zookeeper-server-start.sh kafka/config/zookeeper.properties &> zookeeper_start.log &`{{execute}}
 
-Here you can see all of keyspaces that have been created in the Cassandra cluster. There are 5 other keyspaces aside from the *killrvideo* keyspace that you created, all of them starting with **system**. These are automatically created by the database and are used as the data dictionary for the cluster.
+
+Start Kafka
+`kafka/bin/kafka-server-start.sh kafka/config/server.properties &> kafka_start.log &`
