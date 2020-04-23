@@ -1,0 +1,1 @@
+Upon starting the Kafka connect worker, a persistent java process is created that reads either the `connect-distributed.properties` file for multi-node connect clusters, or  the `connect-standalone.properties` file for single node clusters. 
