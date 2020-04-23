@@ -14,8 +14,8 @@ offset.flush.interval.ms=10000
 
 plugin.path=/root/kafka-connect/kafka-connect-dse-1.3.1.jar
 ```
-Move this file into the `kafka/config
-mv connect-standalone.properties kafka/config`{{execute}}
+Move this file into the `kafka/config` directory.
+`mv connect-standalone.properties kafka/config`{{execute}}
 
 The `dse-sink.json` holds important DataStax Apache Kafka™ Connector parameters.
 ```
