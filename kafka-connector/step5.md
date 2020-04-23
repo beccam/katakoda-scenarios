@@ -2,7 +2,7 @@ Head back to the tab where DSE had been starting up. Next we are going prepare o
 
 Open `cqlsh`
 
-`dse-6.8.0/bin/cqlsh`{{execute}}
+`/root/dse-6.8.0/bin/cqlsh`{{execute}}
 
 Setup DSE schema
 ```
@@ -19,5 +19,3 @@ CREATE TABLE stocks.ticks (
 ```{{execute}}
 
 Once the keyspace and table have been created, you can `exit`{{execute}} *cqlsh*
-
-Return to the tab where we had been compiling 

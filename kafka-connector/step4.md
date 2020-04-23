@@ -11,18 +11,11 @@ Let's Setup the simple TickProducer
 
 The producer publish messages to the topic, and the Kafka broker stores them in the order received.
 
-Run Producer
+Run the Producer:
 ```
 cd kafka-example/stockticks; mvn clean compile exec:java -Dexec.mainClass=com.datastax.tickdata.producer.TickProducerJson &> producer.log & tail -f producer.log
 ```{{execute}}
 
-You should see messages like this
-```
-2020-04-23 14:05:15 INFO  TickProducer:83 - Successfully created 33536 Kafka records
-2020-04-23 14:05:20 INFO  TickProducer:83 - Successfully created 281611 Kafka records
-2020-04-23 14:05:25 INFO  TickProducer:83 - Successfully created 754991 Kafka records
-2020-04-23 14:05:30 INFO  TickProducer:83 - Successfully created 1217310 Kafka records
-2020-04-23 14:05:35 INFO  TickProducer:83 - Successfully created 1900916 Kafka records
-```
+You can have a look at some of the messages that were written to Kafka:
 
-`kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --topic tick-stream-json --max-messages 10`{{execute}}
+`/root/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --topic tick-stream-json --max-messages 10`{{execute}}
