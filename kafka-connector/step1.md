@@ -2,7 +2,7 @@ Apache Kafka™ is a distributed streaming message queue. Producers publish mess
 
 ![](assets/messagelog.png)
 
-Before you begin, wait for DSE to finsih starting up.
+Wait for DSE to finsih starting up, or start working in a new tab by clicking the plus on the dashboard: ![](assets/plus.png)
 
 Download the Apache Kafka tarball:
 `wget http://apache.spinellicreations.com/kafka/2.2.2/kafka_2.11-2.2.2.tgz`{{execute}}
