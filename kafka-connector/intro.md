@@ -1,3 +1,3 @@
-In this scenario, you will learn the essential CQL commands needed to effectively write and read data to Apache Cassandra, using the included **cqlsh** tool.
+Learn about the Kafka connector
 
-v2
+v3
