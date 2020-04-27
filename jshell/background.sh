@@ -9,7 +9,7 @@ cd ..
 apt-get update
 apt install -y openjdk-11-jdk-headless
 
-https://apache.mirror.gtcomm.net/cassandra/4.0-alpha4/apache-cassandra-4.0-alpha4-bin.tar.gz
+wget https://apache.mirror.gtcomm.net/cassandra/4.0-alpha4/apache-cassandra-4.0-alpha4-bin.tar.gz
 tar xzf apache-cassandra-4.0-alpha4-bin.tar.gz
 apache-cassandra-4.0-alpha4/bin/cassandra -R
 
