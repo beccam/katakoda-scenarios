@@ -1,7 +1,7 @@
 #!/bin/bash
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/jre"
 
-https://github.com/DataStax-Examples/quickstart-java
+git clone https://github.com/DataStax-Examples/quickstart-java
 cd quickstart-java
 mvn compile
 cd ..
