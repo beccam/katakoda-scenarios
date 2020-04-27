@@ -6,12 +6,7 @@
   "details": {
     "assets": {
         "host01": [
-            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"},
-            {"file": "pom.xml", "target": "quickstart"},
-            {"file": "Main.java", "target": "quickstart/src/main/java"},
-            {"file": "logback.xml", "target": "quickstart/src/main/resources"},
-            {"file": "application.conf", "target": "quickstart/src/main/resources"},
-            {"file": ".mavenrc", "target": "~/"}
+            {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
         ]
     },
     "steps": [
@@ -53,6 +48,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid":"ubuntu1804"
   }
 }
