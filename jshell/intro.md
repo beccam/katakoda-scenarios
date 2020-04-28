@@ -1,5 +1,5 @@
 In this scenario, you will:
 
-* Connect to an DataStax Astra instance with the DataStax Java driver
-
-ver 0.6
+* Download your DataStax Astra credentials
+* Use your credential and authorization to set up a *CqlSession* that connects to your DataStax Astra instance
+* Send queries through the driver to your DataStax Astra database
