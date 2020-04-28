@@ -13,3 +13,14 @@
 
 
 `CqlSession session = CqlSession.builder().withCloudSecureConnectBundle((Paths.get("/root/creds.zip")).withAuthCredentials("beccam","dontlookback").withKeyspace("demo").build()`{{execute}}
+
+
+`{
+ResultSet rs = session.execute("select release_version from system.local");
+                Row row = rs.one();
+                if (row != null) {
+                    System.out.println(row.getString("release_version"));
+                } else {
+                    System.out.println("An error occurred.");
+                }
+}`{{execute}}
