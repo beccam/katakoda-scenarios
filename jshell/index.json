@@ -1,12 +1,12 @@
 {
-  "title": "JShell",
+  "title": "Connect to Astra with the Java Driver",
   "description": "This is a WIP",
   "difficulty": "Beginner",
   "time": "5 - 10 minutes",
   "details": {
     "assets": {
         "host01": [
-        
+
 
         ]
     },
@@ -22,31 +22,13 @@
       {
         "title": "SimpleStatements: Select a user",
         "text": "step3.md"
-      },
-      {
-        "title": "SimpleStatements: Update a user",
-        "text": "step4.md"
-      },
-      {
-        "title": "SimpleStatements: Delete a user",
-        "text": "step5.md"
-      },
-      {
-        "title": "Quiz",
-        "text": "step6.md"
       }
-    ],
-    "intro": {
-      "courseData": "background.sh",
-      "code": "foreground.sh",
-      "text": "intro.md"
-    },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid":"ubuntu1804"
