@@ -6,21 +6,19 @@
   "details": {
     "assets": {
         "host01": [
-
-
         ]
     },
     "steps": [
       {
-        "title": "Creating a CqlSession Instance",
+        "title": "Get Cloud Credentials",
         "text": "step1.md"
       },
       {
-        "title": "SimpleStatements: Insert a user",
+        "title": "Initialize the DataStax Java driver.",
         "text": "step2.md"
       },
       {
-        "title": "SimpleStatements: Select a user",
+        "title": "Connect to your Astra database",
         "text": "step3.md"
       }
     ],
