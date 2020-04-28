@@ -23,6 +23,7 @@
         "title": "SimpleStatements: Select a user",
         "text": "step3.md"
       }
+    ],
     "finish": {
       "text": "finish.md"
     }
