@@ -1,1 +1,1 @@
-Congratulations! You now have the basic knowledge of using the Java driver for Apache Cassandra™.
+Congratulations! You now connected to Astra through the DataStax Java Driver for Apache Cassandra.
