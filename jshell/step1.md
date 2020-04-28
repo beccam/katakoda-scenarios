@@ -24,11 +24,5 @@ Let's add cqlsh to our path.
 
 
 ```
-{
-  CqlSession session = CqlSession.builder()
-    .withCloudSecureConnectBundle("/root/creds.zip")
-    .withAuthCredentials("beccam","dontlookback")
-    .withKeyspace("demo")
-    .build());
- }   
+CqlSession session = CqlSession.builder().withCloudSecureConnectBundle("/root/creds.zip").withAuthCredentials("beccam","dontlookback").withKeyspace("demo").build());`{{execute}}
 ```{{execute}}   
