@@ -8,7 +8,7 @@ Let's add cqlsh to our path.
 
 `export PATH=$PATH:/root/cqlsh-astra/bin`{{execute}}
 
-curl -L "<paste link here>" > creds.zip
+`curl -L "<paste link here>" > creds.zip`
 
 
 `mvn com.github.johnpoth:jshell-maven-plugin:1.3:run`
@@ -23,12 +23,10 @@ import java.net.InetSocketAddress;
 
 ```
 {
-CqlSession session = CqlSession.builder()
-  .withCloudSecureConnectBundle("/path/to/secure-connect-database_name.zip")
-  .withAuthCredentials("username","password")
-  .withKeyspace("keyspace_name")
-  .build())
+  CqlSession session = CqlSession.builder()
+    .withCloudSecureConnectBundle("/root/creds.zip")
+    .withAuthCredentials("beccam","dontlookback")
+    .withKeyspace("demo")
+    .build());
  }   
 ```{{execute}}   
-
-
