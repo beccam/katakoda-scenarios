@@ -1,8 +1,9 @@
+This short scenario will teach you how to connect to your DataStax Astra instance through the DataStax Java Driver for Apache Cassandra.
 
-`curl -L "<paste link here>" > creds.zip`
+First, you will need to download your credential for your Astra account.
 
-`/root/cloud-java/src/main/java/ConnectDatabase.java`{{open}}
+`curl -L "<paste link here>" > creds.zip
 
-`cd cloud-java; mvn compile
+Provided you are in the `/root` directory, your credentials should be located at `/root/creds.zip`
 
-mvn compile exec:java -Dexec.mainClass=ConnectDatabase
+## Let's move on to looking at our Java code.
