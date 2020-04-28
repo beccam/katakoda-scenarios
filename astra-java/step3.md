@@ -2,7 +2,7 @@ Our Java code is very simple, it inserts once row of user data into the users ta
 ```
 session.execute(
   SimpleStatement.builder( "INSERT INTO users (last_name, first_name, email, address) VALUES (?,?,?,?)")
-  .addPositionalValues("Smith", "Alex","asmith@gmail.com","123 Main st.")
+  .addPositionalValues("Williams", "Derrick","dwilliams@gmail.com","321 Marble st.")
   .build());
 ```
 
@@ -10,7 +10,7 @@ After that, it prints out the `first_name` and `email` of the user we just enter
 ```
 ResultSet rs = session.execute(
    SimpleStatement.builder("SELECT * FROM users WHERE last_name=?")
-   .addPositionalValue("Smith")
+   .addPositionalValue("Williams")
    .build());
 
 Row row = rs.one();
@@ -24,6 +24,6 @@ You can then run Maven to launch the program
 `mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}   
 
 You should get the output:
-`Alex asmith@gmail.com`
+`Derrick dwilliams@gmail.com`
 
 ## *Great! You've just learned how connect to your Astra instance and run queries against it!!*   
