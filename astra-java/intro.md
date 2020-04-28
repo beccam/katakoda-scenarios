@@ -1,3 +1,5 @@
+Use the DataStax Java driver to connect to your DataStax Astra database and begin building your own application.
+
 In this scenario, you will:
 
 * Download your DataStax Astra credentials
@@ -5,3 +7,4 @@ In this scenario, you will:
 * Send queries through the driver to your DataStax Astra database
 
 Complete the [Connect to Astra with CQL Shell](https://www.katacoda.com/shallada/scenarios/astra-cqlsh) scenario to ensure you have an Astra database set up and the schema ready.
+
