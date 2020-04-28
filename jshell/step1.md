@@ -1,3 +1,16 @@
+
+```
+wget https://downloads.datastax.com/enterprise/cqlsh-astra.tar.gz
+tar xvzf cqlsh-astra.tar.gz
+```{{execute}}
+
+Let's add cqlsh to our path.
+
+`export PATH=$PATH:/root/cqlsh-astra/bin`{{execute}}
+
+curl -L "<paste link here>" > creds.zip
+
+
 `mvn com.github.johnpoth:jshell-maven-plugin:1.3:run`
 
 ```
@@ -11,9 +24,11 @@ import java.net.InetSocketAddress;
 ```
 {
 CqlSession session = CqlSession.builder()
-    .addContactPoint(new InetSocketAddress("127.0.0.1", 9042))
-    .withKeyspace("demo")
-    .withLocalDatacenter("datacenter1")
-    .build() 
+  .withCloudSecureConnectBundle("/path/to/secure-connect-database_name.zip")
+  .withAuthCredentials("username","password")
+  .withKeyspace("keyspace_name")
+  .build())
  }   
 ```{{execute}}   
+
+
