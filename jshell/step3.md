@@ -18,7 +18,7 @@ System.out.format("%s %s\n", row.getString("first_name"), row.getString("email")
 ```
 
 We will be using Maven to build and run our application. Make sure you are in the `cloud-java` directory in your terminal.
-`cd ~/could-java`{{execute}}
+`cd ~/cloud-java`{{execute}}
 
 You can then run Maven to launch the program
 `mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}   
@@ -26,4 +26,4 @@ You can then run Maven to launch the program
 You should get the output:
 `Alex asmith@gmail.com`
 
-## Great! You've just learned how connect to your Astra instance and run queries against it!!      
+## *Great! You've just learned how connect to your Astra instance and run queries against it!!*   
