@@ -2,7 +2,7 @@
 `curl -L "<paste link here>" > creds.zip`
 
 
-`cd quickstart; mvn compile`{{execute}}
+`cd quickstart-java; mvn compile`{{execute}}
 
 `mvn com.github.johnpoth:jshell-maven-plugin:1.3:run`{{execute}}
 
