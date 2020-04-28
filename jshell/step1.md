@@ -11,9 +11,11 @@ Let's add cqlsh to our path.
 `curl -L "<paste link here>" > creds.zip`
 
 
-`mvn com.github.johnpoth:jshell-maven-plugin:1.3:run`
 
 
+`cd quickstart; mvn compile`{{execute}}
+
+`mvn com.github.johnpoth:jshell-maven-plugin:1.3:run`{{execute}}
 
 `import com.datastax.oss.driver.api.core.CqlSession;`{{execute}}
 `import com.datastax.oss.driver.api.core.cql.*;`{{execute}}
