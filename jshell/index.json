@@ -24,6 +24,11 @@
         "text": "step3.md"
       }
     ],
+    "intro": {
+      "courseData": "background.sh",
+      "code": "foreground.sh",
+      "text": "intro.md"
+    },
     "finish": {
       "text": "finish.md"
     }
