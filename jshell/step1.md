@@ -13,13 +13,13 @@ Let's add cqlsh to our path.
 
 `mvn com.github.johnpoth:jshell-maven-plugin:1.3:run`
 
-```
-{
-import com.datastax.oss.driver.api.core.CqlSession;
-import com.datastax.oss.driver.api.core.cql.*;
-import java.net.InetSocketAddress;
-}
-```
+
+
+`import com.datastax.oss.driver.api.core.CqlSession;`{{execute}}
+`import com.datastax.oss.driver.api.core.cql.*;`{{execute}}
+`import java.net.InetSocketAddress;`{{execute}}
+
+
 
 ```
 {
