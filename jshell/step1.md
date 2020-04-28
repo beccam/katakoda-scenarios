@@ -11,5 +11,5 @@
 `import java.net.InetSocketAddress;`{{execute}}
 
 ```
-CqlSession session = CqlSession.builder().withCloudSecureConnectBundle("/root/creds.zip").withAuthCredentials("beccam","dontlookback").withKeyspace("demo").build());`{{execute}}
-```{{execute}}   
+CqlSession session = CqlSession.builder().withCloudSecureConnectBundle("/root/creds.zip").withAuthCredentials("beccam","dontlookback").withKeyspace("demo").build()`{{execute}}
+```{{execu
