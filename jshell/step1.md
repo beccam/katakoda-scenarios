@@ -9,6 +9,7 @@
 `import com.datastax.oss.driver.api.core.CqlSession;`{{execute}}
 `import com.datastax.oss.driver.api.core.cql.*;`{{execute}}
 `import java.net.InetSocketAddress;`{{execute}}
+`import import java.nio.file.Paths;`{{execute}}
 
 
-`CqlSession session = CqlSession.builder().withCloudSecureConnectBundle("/root/creds.zip").withAuthCredentials("beccam","dontlookback").withKeyspace("demo").build()`{{execute}}
+`CqlSession session = CqlSession.builder().withCloudSecureConnectBundle((Paths.get("/root/creds.zip")).withAuthCredentials("beccam","dontlookback").withKeyspace("demo").build()`{{execute}}
