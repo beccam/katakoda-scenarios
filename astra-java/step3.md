@@ -27,3 +27,6 @@ You should get the output:
 `Alex asmith@gmail.com`
 
 ## *Great! You've just learned how connect to your Astra instance and run queries against it!!*   
+
+
+
