@@ -18,7 +18,7 @@ CqlSession session = CqlSession.builder()
 ```           
 
 * Use the `withCloudSecureConnectBundle()` method to specify the path to the secure connect bundle for your Astra database. We have already done this for you.
-* Use the `withAuthCredentials()` method to specify the username and password for your database. **You will need to provide this**
+* Use the `withAuthCredentials()` method to specify the username and password for your database. **YOU WILL NEED TO PROVIDE THIS**
 * We use the `withKeyspace()` method to specify the keyspace name for your database. If you have completed previous Astra scenarios, you will already have the `user_management` keyspace and `users` table.
 
 ## *Soon our code will be ready to run. Let's first have a look at what this code does.*
