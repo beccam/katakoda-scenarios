@@ -10,9 +10,17 @@
     },
     "steps": [
       {
-        "title": "Get Cloud Credentials",
-        "text": "step1.md"
+        "title": "Create your Astra Database",
+        "text": "step4.md"
       },
+      {
+        "title": "Install and Configure cqlsh",
+        "text": "step5.md"
+      },
+      {
+        "title": "Create a Table",
+        "text": "step6.md"
+      },      
       {
         "title": "Initialize the DataStax Java driver.",
         "text": "step2.md"
