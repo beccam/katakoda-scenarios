@@ -1,0 +1,49 @@
+{
+  "title": "Connect to Astra with the Java Driver",
+  "description": "Use the DataStax Java driver to connect to your DataStax Astra database and begin building your own application.",
+  "difficulty": "Beginner",
+  "time": "5 minutes",
+  "details": {
+    "assets": {
+        "host01": [
+          {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+        ]
+    },
+    "steps": [
+      {
+        "title": "Create your Astra Database",
+        "text": "step4.md"
+      },
+      {
+        "title": "Install and Configure cqlsh",
+        "text": "step5.md"
+      },
+      {
+        "title": "Create a Table",
+        "text": "step6.md"
+      },
+      {
+        "title": "Initialize the DataStax Java driver.",
+        "text": "step2.md"
+      },
+      {
+        "title": "Connect to your Astra database",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "courseData": "background.sh",
+      "code": "foreground.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid":"ubuntu1804"
+  }
+}
