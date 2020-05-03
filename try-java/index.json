@@ -1,5 +1,5 @@
 {
-  "title": "Connect to Astra with the Java Driver",
+  "title": "Java Driver",
   "description": "Use the DataStax Java driver to connect to your DataStax Astra database and begin building your own application.",
   "difficulty": "Beginner",
   "time": "5 minutes",
