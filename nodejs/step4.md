@@ -2,6 +2,5 @@ Next, will we fill in the `selectUser` function. Using the `execute()` method, w
 
 ```
 const select = 'SELECT firstname, email FROM users WHERE lastname = ?';
-client.execute(select, [ 'Caesar' ], { prepare : true })
-  .then(result => console.log('User with firstname %s and email %s', result.rows[0].firtname, result.rows[0].email))
+client.execute(select, [ 'Caesar' ], { prepare : true }).then(result => console.log('User with firstname %s and email %s', result.rows[0].firtname, result.rows[0].email))
 ```{{execute}}
