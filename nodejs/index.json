@@ -1,5 +1,4 @@
 {
-  "private": true,
   "title": "Try it out: DataStax Node.js Driver for Apache Cassandra™",
   "description": "Learn how to perfrom CRUD operations with the DataStax Node.js Driver for Apache Cassandra™",
   "difficulty": "Beginner",
