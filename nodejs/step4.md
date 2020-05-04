@@ -4,3 +4,7 @@ Next, will we fill in the `selectUser` function. Using the `execute()` method, w
 const select = 'SELECT firstname, email FROM users WHERE lastname = ?';
 client.execute(select, [ 'Caesar' ], { prepare : true }).then(result => console.log('User with firstname %s and email %s', result.rows[0].firtname, result.rows[0].email))
 ```{{execute}}
+
+Additionally, if you plan to reuse a query within your application (it is generally the case, your parameter value changes but there is only a small number of different queries for a given schema), you can benefit from using prepared statements.
+
+Using prepared statements increases performance compared to plain executes, especially for repeated queries, as the query only needs to be parsed once by the Cassandra node. It has the additional benefit of providing metadata of the parameters to the driver, allowing better type mapping between JavaScript and Cassandra without the need of additional info (hints) from the user.
