@@ -1,6 +1,6 @@
 {
-  "title": "Java Driver",
-  "description": "Use the DataStax Java driver to connect to your DataStax Astra database and begin building your own application.",
+  "title": "Try it Out: DataStax Java Driver",
+  "description": "WIP",
   "difficulty": "Beginner",
   "time": "5 minutes",
   "details": {
@@ -11,24 +11,32 @@
     },
     "steps": [
       {
-        "title": "Create your Astra Database",
-        "text": "step4.md"
+        "title": "Setup the Java project",
+        "text": "step0.md"
       },
       {
-        "title": "Install and Configure cqlsh",
-        "text": "step5.md"
+        "title": "Creating a CqlSession Instance",
+        "text": "step1.md"
       },
       {
-        "title": "Create a Table",
-        "text": "step6.md"
-      },
-      {
-        "title": "Initialize the DataStax Java driver.",
+        "title": "SimpleStatements: Insert a user",
         "text": "step2.md"
       },
       {
-        "title": "Connect to your Astra database",
+        "title": "SimpleStatements: Select a user",
         "text": "step3.md"
+      },
+      {
+        "title": "SimpleStatements: Update a user",
+        "text": "step4.md"
+      },
+      {
+        "title": "SimpleStatements: Delete a user",
+        "text": "step5.md"
+      },
+      {
+        "title": "Quiz",
+        "text": "step6.md"
       }
     ],
     "intro": {
