@@ -1,4 +1,4 @@
-Our Java code is very simple, it inserts once row of user data into the users table:
+Our Java code is very simple, it inserts one row of user data into the users table:
 ```
 session.execute(
   SimpleStatement.builder( "INSERT INTO users (last_name, first_name, email, address) VALUES (?,?,?,?)")
@@ -24,8 +24,6 @@ You can then run Maven to launch the program
 `mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}   
 
 You should get the output:
-`Alex asmith@gmail.com
+`Alex asmith@gmail.com`
 
 ## *Great! You've just learned how connect to your Astra instance and run queries against it!!*   
-
-
