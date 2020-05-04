@@ -25,7 +25,7 @@ Once `jshell` is running, there are a few classes that we are going to need to i
 import com.datastax.oss.driver.api.core.CqlSession;
 import com.datastax.oss.driver.api.core.cql.*;
 import java.net.InetSocketAddress;
-```
+```{{execute}}
 
 Before we start executing any queries against a Cassandra database, we need to setup an instance of *CqlSession*. *CqlSession* is the main entry point of the driver. It holds the known state of the actual Cassandra cluster, and is what you use to execute queries.
 
@@ -33,7 +33,7 @@ Before we start executing any queries against a Cassandra database, we need to s
 
 In the main method, we use `CqlSession.builder()` to add:
 * A contact point and InetSocket(`"127.0.0.1", 9042`)
-* local datacenter name (``"datacenter1"``)
+* local datacenter name (`"datacenter1"`)
 
 `CqlSession session = CqlSession.builder().addContactPoint(new InetSocketAddress("127.0.0.1", 9042)).withLocalDatacenter("datacenter1").build();`{{execute}}
 
