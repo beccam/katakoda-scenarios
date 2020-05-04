@@ -4,7 +4,7 @@ Answer the following:
 [ ] Client
 [ ] CqlSession
 [ ] CassSession
-[* ] Cluster
+[*] Cluster
 
 >>A SimpleStatement is (check all that apply)<<
 [*] Built directly from a raw query string.
@@ -12,8 +12,8 @@ Answer the following:
 [*] Used for queries that are executed only once or a few times.
 [ ] Obtained by binding values to a prepared query.
 
->By default, each row in the result set will be a...<<
+>>By default, each row in the result set will be a...<<
 [ ] SimpleStatement
-[ ] namedtuple
+[*] namedtuple
 [ ] dict
 [ ] CqlSession
