@@ -18,4 +18,4 @@ Create the `CqlSession` instance:
 
 </br>
 
-## Once you have finished configuring your connection to Cassandra, we can move creating a keyspace and table.              
+## Once you have finished configuring your connection to Cassandra, we can move on to learning about SimpleStatements.             
