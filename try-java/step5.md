@@ -12,7 +12,7 @@ Let's do this! Run the following statement in `jshell` to delete our user once a
 ```
 {
 session.execute(
-    SimpleStatement.builder("DELETE FROM users WHERE lastname=?")
+    SimpleStatement.builder("DELETE FROM demo.users WHERE lastname=?")
         .addPositionalValue("Caesar")
         .build());
 }

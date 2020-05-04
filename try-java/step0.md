@@ -20,10 +20,11 @@ To make things easy, we will be using `jshell`. The Java Shell tool (JShell) is 
 
 `mvn -q com.github.johnpoth:jshell-maven-plugin:1.3:run`{{execute}}
 
-Once `jshell` is running, we are going to need to import the `CqlSession` class to connect to the cluster:
+Once `jshell` is running, we are going to need to import the `CqlSession` class to connect to the cluster, as well as the `cql` package:
 
 ```
 import com.datastax.oss.driver.api.core.CqlSession;
+import com.datastax.oss.driver.api.core.cql.*;
 ```{{execute}}
 
 </br>

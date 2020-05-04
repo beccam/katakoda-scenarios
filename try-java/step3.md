@@ -1,6 +1,6 @@
 Next, will execute a SELECT SimpleStatements. Using the `session.execute()` and an instance of *SimpleStatement*, we will retrieve our user we just inserted back out of the table. This returns a *ResultSet*, which is an iterable of *Row* objects.
 
-For this step, we will include code that:
+For this step, we will execute code that that:
  * Selects for the user we just inserted
  * Return the first row from the result set
  * Print out the first and email address of the user
