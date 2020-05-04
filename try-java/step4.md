@@ -13,7 +13,7 @@ Run the following query from `jshell`.Notice that we select the row to update by
 ```
 {
 session.execute(
-      SimpleStatement.builder("UPDATE users SET email =?  WHERE lastname =? ")
+      SimpleStatement.builder("UPDATE demo.users SET email =?  WHERE lastname =? ")
           .addPositionalValues("jc@example.com", "Caesar")
           .build());
 }
