@@ -20,11 +20,11 @@ Now that we have created an instance of *CqlSession* to connect to Cassandra, we
 
 We can pass any string command that we would execute normally through CQLSH into `session.execute()` method. We are going to pass in the `CREATE KEYSPACE` command.
 
-`session.execute("CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}");`{{execute}}
+`session.execute("CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}")`{{execute}}
 
 And also create the `users` table:
 
-`session.execute("CREATE TABLE demo.users (lastname text PRIMARY KEY, firstname text, email text)");`{{execute}}
+`session.execute("CREATE TABLE demo.users (lastname text PRIMARY KEY, firstname text, email text)")`{{execute}}
 
 </br>
 
