@@ -9,5 +9,3 @@ In this scenario, you will:
   * Update the user's age
   * Delete the user from the table
 * Process CQL query results programmatically
-
-ver 0.3
