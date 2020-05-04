@@ -31,6 +31,10 @@ System.out.format("%s %s\n", row.getString("firstname"), row.getString("email"))
 }
 ```{{execute}}
 
+You should see the output:
+`Julius caesar@example.com`
+
+
 </br>
 
 ## Great! You've just learned how to SELECT and print out a row. Let's move on to learning how to perform an UPDATE.         

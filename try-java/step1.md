@@ -16,6 +16,16 @@ In the main method, we use `CqlSession.builder()` to add:
 Create the `CqlSession` instance:
 `CqlSession session = CqlSession.builder().addContactPoint(new InetSocketAddress("127.0.0.1", 9042)).withLocalDatacenter("datacenter1").build();`{{execute}}
 
+Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to create a basic `demo` keyspace and `users` table.
+
+We can pass any string command that we would execute normally through CQLSH into `session.execute()` method. We are going to pass in the "CREATE KEYSPACE" command.
+
+`session.execute("CREATE KEYSPACE demo WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}")`{{execute}}
+
+And also the `users` table:
+
+`session.execute("CREATE TABLE demo.users (lastname text PRIMARY KEY, firstname text, email text)")`{{execute}}
+
 </br>
 
 ## Once you have finished configuring your connection to Cassandra, we can move on to learning about SimpleStatements.             
