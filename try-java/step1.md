@@ -8,5 +8,6 @@ In the main method, we use `CqlSession.builder()` to add:
 
 `CqlSession session = CqlSession.builder().addContactPoint(new InetSocketAddress("127.0.0.1", 9042)).withLocalDatacenter("datacenter1").build();`{{execute}}
 
+</br>
 
 ## Once you have finished configuring your connection to Cassandra, we can move on to learning about SimpleStatements.                
