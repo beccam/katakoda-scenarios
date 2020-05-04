@@ -1,7 +1,7 @@
 {
   "private": true,
-  "title": "Try It Out: DataStax Java Driver for Apache Cassandra™",
-  "description": "Learn how to perfrom CRUD operations with the DataStax Java Driver for Apache Cassandra™",
+  "title": "OLD: Try It Out: DataStax Java Driver for Apache Cassandra™",
+  "description":"",
   "difficulty": "Beginner",
   "time": "5 - 10 minutes",
   "details": {

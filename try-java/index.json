@@ -1,6 +1,6 @@
 {
   "title": "Try it Out: DataStax Java Driver",
-  "description": "WIP",
+  "description": "Learn how to perfrom CRUD operations with the DataStax Java Driver for Apache Cassandra™",
   "difficulty": "Beginner",
   "time": "5 minutes",
   "details": {
