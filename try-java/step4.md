@@ -1,4 +1,4 @@
-Say our user has a wants to change their email. We create the `updateUser` method to update the user's email address. Within the `updateUser` method, `execute()` an `UPDATE` that allows it to do just that.
+Say our user has a wants to change their email. We will execute an UPDATE statement to update the user's email address. As usual, we do this through the `session.execute()` method.
 
 <summary style="color:teal">Example:</summary>
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
@@ -8,23 +8,32 @@ Say our user has a wants to change their email. We create the `updateUser` metho
 </pre></div>
 
 
-Look at the `main` method, where we call the `updateUser` method, selecting the user by their lastname.  
-<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">updateUser<span style="font-weight: bold">(</span>session<span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;jc@example.com&quot;</span><span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Caesar&quot;</span><span style="font-weight: bold">);</span>
+Run the following query from `jshell`.Notice that we select the row to update by specifying the `lastname`.
 
-</pre></div>
+```
+{
+session.execute(
+      SimpleStatement.builder("UPDATE users SET email =?  WHERE lastname =? ")
+          .addPositionalValues("jc@example.com", "Caesar")
+          .build());
+}
+```{{execute}}
 
-Fill in `updateUser` such that the the user is inserted into the table. Notice that `getUser` is also called from the `updateUser` method. This this so we can see if our update worked.
-<details>
-  <summary style="color:teal">Solution</summary>
-<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre class="file" data-target="clipboard" style="margin: 0; line-height: 125%">  session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
-      SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;UPDATE users SET email =?  WHERE lastname =? &quot;</span><span style="font-weight: bold">)</span>
-          <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValues</span><span style="font-weight: bold">(</span>email<span style="font-weight: bold">,</span> lastname<span style="font-weight: bold">)</span>
-          <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
-</pre></div>      
-</details>
+Following the update, we can check to see if the change worked by executing the same SELECT statement as we did in the last step.
 
-You can then run Maven to launch the program from the `quickstart` directory.
-`mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}  
+```
+{
+ResultSet rs = session.execute(
+        SimpleStatement.builder("SELECT * FROM demo.users WHERE lastname=?")
+                .addPositionalValue("Caesar")
+                .build());
+
+Row row = rs.one();
+System.out.format("%s %s\n", row.getString("firstname"), row.getString("email"));
+}
+```{{execute}}
+
+
 
 </br>
 
