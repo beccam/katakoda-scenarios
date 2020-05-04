@@ -1,5 +1,5 @@
 {
-  "title": "Try it Out: DataStax Java Driver",
+  "title": "Try it Out: DataStax Java Driver for Apache Cassandra™",
   "description": "Learn how to perfrom CRUD operations with the DataStax Java Driver for Apache Cassandra™",
   "difficulty": "Beginner",
   "time": "5 minutes",
@@ -11,7 +11,7 @@
     },
     "steps": [
       {
-        "title": "Setup the Java project",
+        "title": "Java project Setup",
         "text": "step0.md"
       },
       {
