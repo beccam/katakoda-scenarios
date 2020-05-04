@@ -26,7 +26,7 @@ session.execute(
 }
 ```{{execute}}
 
-The we add these 3 parameters as Positional Values:
+The we add the 3 parameters as Positional Values:
  * `lastname`
  * `firstname`
  * `email`

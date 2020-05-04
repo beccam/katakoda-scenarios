@@ -25,3 +25,7 @@ Once `jshell` is running, we are going to need to import the `CqlSession` class 
 ```
 import com.datastax.oss.driver.api.core.CqlSession;
 ```{{execute}}
+
+</br>
+
+## Now Apache Cassandra is running ,let's configure our connection to the instance.
