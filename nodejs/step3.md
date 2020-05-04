@@ -16,7 +16,7 @@ client.execute(insert, params, { prepare : true });
 
 This way you can reuse the query and forget about escaping / stringifying the parameters in your query.
 
-Execution methods in the driver return a `Promise`, you can await on the promise to be fulfilled using async functions(ie. `then()` or `await`)
+Execution methods in the driver return a `Promise`, you can await on the promise to be fulfilled using async functions (ie. `then()` or `await`)
 
 The promise is fulfilled when the data is inserted.
 
