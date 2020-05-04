@@ -12,3 +12,5 @@ Instantiating a Cluster does not actually connect us to any nodes. To establish 
 ```
 session = cluster.connect()
 ```{{execute}}
+
+## Now that you have connected to Cassandra, let's create a keyspace and table.
