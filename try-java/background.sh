@@ -1,9 +1,5 @@
 #!/bin/bash
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" > .bashrc
-
-touch .mavenrc
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" > .mavenrc
 
 git clone https://github.com/DataStax-Examples/quickstart-java.git
 cd quickstart-java
