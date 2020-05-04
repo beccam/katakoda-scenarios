@@ -1,39 +1,32 @@
-Let's download `cqlsh` and configure it to work with your Astra database.
-Here's the command to download and unpack `cqlsh`.
+Finally we will delete our user from the table. We will build out the `deleteUser` method with a `DELETE` statement to do so.
 
-`wget https://downloads.datastax.com/enterprise/cqlsh-astra.tar.gz
-tar xvzf cqlsh-astra.tar.gz`{{execute}}
+<summary style="color:teal">Example:</summary>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre  style="margin: 0; line-height: 125%">session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
+        SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;DELETE FROM users WHERE lastname=?&quot;</span><span style="font-weight: bold">)</span>
+            <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValue</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;Brutus&quot;</span><span style="font-weight: bold">)</span>
+            <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
+</pre></div>
 
-Let's add `cqlsh` to our path.
 
-`export PATH=$PATH:/root/cqlsh-astra/bin`{{execute}}
+The `deleteUser` method is called from the main method:
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">deleteUser<span style="font-weight: bold">(</span>session<span style="font-weight: bold">,</span> <span style="color: #bb8844">&quot;Caesar&quot;</span><span style="font-weight: bold">);</span>
+</pre></div>
 
-We want to have a secure connection between `cqlsh` and our Astra database.
-We'll set that up here.
 
-Astra provides a secure connection bundle you will want to download.
-Here's the command, but notice you will need to replace _<paste link here>_ with a link to the secure bundle.
-Copy this command and paste it in the terminal window, but DO NOT EXECUTE THE COMMAND YET!!!!!!
+Fill in `deleteUser` such the the user is inserted into the table.
+<details>
+<summary style="color:teal">Solution</summary>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre class="file" data-target="clipboard" style="margin: 0; line-height: 125%">  session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
+      SimpleStatement<span style="font-weight: bold">.</span><span style="color: #008080">builder</span><span style="font-weight: bold">(</span><span style="color: #bb8844">&quot;DELETE FROM users WHERE lastname=?&quot;</span><span style="font-weight: bold">)</span>
+          <span style="font-weight: bold">.</span><span style="color: #008080">addPositionalValue</span><span style="font-weight: bold">(</span>lastname<span style="font-weight: bold">)</span>
+          <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
+</pre></div>
 
-`curl -L "<paste link here>" > creds.zip`{{copy}}
+</details>
 
-You can find the link on the Astra page by following the steps shown below.
-Note that this link is time-sensitive, so you need to complete the next couple of steps without delay.
+Run Maven to launch the program from the `quickstart` directory.
+`mvn compile exec:java -Dexec.mainClass=Main -q`{{execute}}  
 
-![Get Secure Bundle Link](assets/GetConnectionBundleLink.png)
+</br>
 
-Now, go back to the terminal tab.
-You will need to paste the link (the one you just copied) into the `curl` command as indicated - be sure to include the double quotes.
-The curl command with the link will look something like this.
-
-![Curl Command](assets/CurlCommand.png)
-
-Once you have pasted the link, execute the `curl` command.
-
-Finally, you can start the CQL shell with the following command.
-You will be prompted for the necessary password.
-If you followed our instructions when you created the database, the password is `DBPassword`{{copy}}.
-
-`cqlsh --secure-connect-bundle=creds.zip -u DBUser`{{execute}}
-
-## Outstanding! You are connected to Astra!
+## Awesome! Now you know how to perform basic CRUD operations with the DataStax Driver for Apache Cassandra™.
