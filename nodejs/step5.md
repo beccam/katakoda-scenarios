@@ -10,7 +10,7 @@ client.execute(update, [ 'jc@example.com', 'Caesar' ], { prepare : true } );
 ```
 const select = 'SELECT firstname, email FROM users WHERE lastname = ?';
 client.execute(select, [ 'Caesar' ], { prepare : true })
-  .then(result => console.log('User with firstname %s and email %s', result.rows[0].firtname, result.rows[0].email))
+  .then(result => console.log('User with firstname %s and email %s', result.rows[0].firstname, result.rows[0].email))
 ```{{execute}}
 
 ## You're almost there! Coming up, how to DELETE a row from a table
