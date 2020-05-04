@@ -14,15 +14,14 @@ Dependencies have already been declared in `pom.xml`, including the latest versi
   <version>${driver.version}</version>
 </dependency>
 ```
+Review the dependencies with `cat pom.xml` if you wish, otherwise let's get on with connecting to Cassandra.
 
 To make things easy, we will be using `jshell`. The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. Let's start `jshell` from the project directory.
 
 `mvn -q com.github.johnpoth:jshell-maven-plugin:1.3:run`{{execute}}
 
-Once `jshell` is running, there are a few classes that we are going to need to import:
+Once `jshell` is running, we are going to need to import the `CqlSession` class to connect to the cluster:
 
 ```
 import com.datastax.oss.driver.api.core.CqlSession;
-import com.datastax.oss.driver.api.core.cql.*;
-import java.net.InetSocketAddress;
 ```{{execute}}
