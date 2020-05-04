@@ -19,6 +19,10 @@
         "text": "step1.md"
       },
       {
+        "title": "Create the keyspace and table",
+        "text": "step1-5.md"
+      },
+      {
         "title": "SimpleStatements: Insert a user",
         "text": "step2.md"
       },
