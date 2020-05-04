@@ -1,9 +1,11 @@
 The DataStax Java Driver for Apache Cassandra allows us to interact with Cassandra in the Java programming language.
 This short scenario will walk you through using CRUD operations against your instance through the Java Driver.
 
-Enter into in the `quickstart-java` directory. We will be using Maven to manage our dependencies. Dependencies have already been declared in `pom.xml`, including the latest version of Java driver.
+Wait until Cassandra has finished starting up. Enter the `quickstart-java` directory. We will be using Maven to manage our dependencies.
 
 `cd ~/quickstart-java`{{execute}}
+
+Dependencies have already been declared in `pom.xml`, including the latest version of Java driver.
 
 ```
 <dependency>

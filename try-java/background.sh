@@ -16,4 +16,5 @@ apache-cassandra-4.0-alpha3/bin/cassandra -R
 while [ `grep "Starting listening for CQL clients" apache-cassandra-4.0-alpha3/logs/system.log | wc -l` -lt 1 ]; do
    sleep 15
 done
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 echo "done" >> /opt/katacoda-background-finished
