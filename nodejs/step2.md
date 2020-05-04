@@ -15,3 +15,5 @@ const client = new cassandra.Client({
 ```{{execute}}
 
 At this point, the driver will be connected to all the nodes in the local data center and discovered the rest of the nodes in your cluster.
+
+## Once you have finished configuring your connection to Cassandra, we can move on to inserting a row into a table.    

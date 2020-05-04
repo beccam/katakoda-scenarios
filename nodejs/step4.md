@@ -1,4 +1,4 @@
-Next, will we fill in the `selectUser` function. Using the `execute()` method, we will retrieve our user we just inserted back out of the table. We also print out the `firstname` and `email` of the user.
+Next, will execute a SELECT statement Using the `execute()` method, we will retrieve our user we just inserted back out of the table. We also print out the `firstname` and `email` of the user.
 
 ```
 const select = 'SELECT firstname, email FROM users WHERE lastname = ?';
@@ -8,3 +8,5 @@ client.execute(select, [ 'Caesar' ], { prepare : true }).then(result => console.
 Additionally, if you plan to reuse a query within your application (it is generally the case, your parameter value changes but there is only a small number of different queries for a given schema), you can benefit from using prepared statements.
 
 Using prepared statements increases performance compared to plain executes, especially for repeated queries, as the query only needs to be parsed once by the Cassandra node. It has the additional benefit of providing metadata of the parameters to the driver, allowing better type mapping between JavaScript and Cassandra without the need of additional info (hints) from the user.
+
+## Great! You've just learned how to SELECT and print out a row. Let's move on to learning how to perform an UPDATE.       

@@ -5,3 +5,5 @@ We will make this easy by running our commands from the Node.js REPL.
 Wait for Cassandra to finish starting up, this shouldn't take long! When it is finished, start the REPL:
 
 `node`{{execute}}
+
+## Now that the REPL is running ,let's configure our connection to the instance.
