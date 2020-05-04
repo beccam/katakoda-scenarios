@@ -33,6 +33,9 @@ System.out.format("%s %s\n", row.getString("firstname"), row.getString("email"))
 }
 ```{{execute}}
 
+You should see the output:
+`Julius jc@example.com`
+
 
 
 </br>

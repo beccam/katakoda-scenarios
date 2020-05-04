@@ -13,8 +13,9 @@ In the main method, we use `CqlSession.builder()` to add:
 * A contact point and InetSocket(`"127.0.0.1", 9042`)
 * local datacenter name (`"datacenter1"`)
 
+Create the `CqlSession` instance:
 `CqlSession session = CqlSession.builder().addContactPoint(new InetSocketAddress("127.0.0.1", 9042)).withLocalDatacenter("datacenter1").build();`{{execute}}
 
 </br>
 
-## Once you have finished configuring your connection to Cassandra, we can move on to learning about SimpleStatements.                
+## Once you have finished configuring your connection to Cassandra, we can move creating a keyspace and table.              

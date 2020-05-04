@@ -13,3 +13,7 @@ We can pass any string command that we would execute normally through CQLSH into
 And also the `users` table:
 
 `session.execute("CREATE TABLE demo.users (lastname text PRIMARY KEY, firstname text, email text)")`{{execute}}
+
+ </br>
+
+ ## Now that we have a keyspace and table, we can move on to learning about SimpleStatements.  
