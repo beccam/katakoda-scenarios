@@ -14,10 +14,10 @@ Run the following code in `jshell` to insert one user into the table.
 
 ```
 {
-cqlSession.execute(
-        SimpleStatement.builder("INSERT INTO demo.users (lastname,  firstname, email)VALUES (?,?,?)")
-                .addPositionalValues("Caesar", "Julius", "caesar@example.com")
-                .build());
+session.execute(
+  SimpleStatement.builder("INSERT INTO demo.users (lastname,  firstname, email)VALUES (?,?,?)")
+          .addPositionalValues("Caesar", "Julius", "caesar@example.com")
+          .build());
 }
 ```{{execute}}
 

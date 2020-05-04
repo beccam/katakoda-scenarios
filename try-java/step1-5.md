@@ -1,10 +1,10 @@
 Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to create a basic `demo` keyspace and `users` table.
 
-<pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">CREATE</span> <span style="color: #0000aa">TABLE</span> demo.users (
-    lastname <span style="color: #00aaaa">text</span> <span style="color: #0000aa">PRIMARY</span> <span style="color: #0000aa">KEY</span>,
-    firstname <span style="color: #00aaaa">text</span>,
-    email <span style="color: #00aaaa">text</span>);
-</pre>
+| Tables   |      Are      |  
+|----------|:-------------:|
+| col 1 is |  left-aligned |
+| col 2 is |    centered   |   
+| col 3 is | right-aligned |    
 
 We can pass any string command that we would execute normally through CQLSH into `session.execute()` method. We are going to pass in the "CREATE KEYSPACE" command.
 
