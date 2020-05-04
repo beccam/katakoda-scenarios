@@ -2,7 +2,7 @@ Next, will execute a SELECT statement Using the `execute()` method, we will retr
 
 ```
 const select = 'SELECT firstname, email FROM users WHERE lastname = ?';
-client.execute(select, [ 'Caesar' ], { prepare : true }).then(result => console.log('User with firstname %s and email %s', result.rows[0].firtname, result.rows[0].email))
+client.execute(select, [ 'Caesar' ], { prepare : true }).then(result => console.log('User with firstname %s and email %s', result.rows[0].firstname, result.rows[0].email))
 ```{{execute}}
 
 Additionally, if you plan to reuse a query within your application (it is generally the case, your parameter value changes but there is only a small number of different queries for a given schema), you can benefit from using prepared statements.
