@@ -2,4 +2,4 @@ A `DELETE` command removes data from one or more selected columns or removes the
 
 Remove our row of user data from the users tables.
 
-`DELETE FROM users WHERE lastname="Awesome"`{{execute}}
+`DELETE FROM users WHERE lastname='Awesome';`{{execute}}
