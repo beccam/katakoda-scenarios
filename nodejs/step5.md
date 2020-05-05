@@ -2,7 +2,7 @@ Say our user changes their email. We create and `execute()` an `UPDATE` statemen
 
 We specify the row we want to change by the primary key (`lastname`), and include the new value to replace the current one for `email`.
 
-<summary style="color:teal">Example:</summary
+<summary style="color:teal">Example:</summary>
 <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #204a87; font-weight: bold">const</span> <span style="color: #000000">update</span> <span style="color: #ce5c00; font-weight: bold">=</span> <span style="color: #4e9a06">&#39;UPDATE users SET email = ? WHERE lastname = ?&#39;</span><span style="color: #000000; font-weight: bold">;</span>
 <span style="color: #000000">client</span><span style="color: #000000; font-weight: bold">.</span><span style="color: #000000">execute</span><span style="color: #000000; font-weight: bold">(</span><span style="color: #000000">update</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #000000; font-weight: bold">[</span> <span style="color: #4e9a06">&#39;mb@example.com&#39;</span><span style="color: #000000; font-weight: bold">,</span> <span style="color: #4e9a06">&#39;Brutus&#39;</span> <span style="color: #000000; font-weight: bold">],</span> <span style="color: #000000; font-weight: bold">{</span> <span style="color: #000000">prepare</span> <span style="color: #ce5c00; font-weight: bold">:</span> <span style="color: #204a87; font-weight: bold">true</span> <span style="color: #000000; font-weight: bold">}</span> <span style="color: #000000; font-weight: bold">);</span>
 </pre></div>
