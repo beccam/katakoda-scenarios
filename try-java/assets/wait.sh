@@ -7,9 +7,9 @@ show_progress()
   local spinstr='\|/-'
   local temp
   echo -n "Starting up Cassandra..."
-  while true; do 
+  while true; do
     sudo grep -i "done" /opt/katacoda-background-finished &> /dev/null
-    if [[ "$?" -ne 0 ]]; then     
+    if [[ "$?" -ne 0 ]]; then
       temp="${spinstr#?}"
       printf " [%c]  " "${spinstr}"
       spinstr=${temp}${spinstr%"${temp}"}
@@ -27,4 +27,5 @@ show_progress()
 show_progress
 sleep 1
 clear
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 printf "\033[0;32mYour Interactive Bash Terminal.\033[0m\n"
