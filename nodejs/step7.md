@@ -9,7 +9,7 @@ Answer the following:
 >>To connect to Cassandra cluster, you need to provide (check all that apply)<<
 [ ] port number
 [*] address/hostname of a node
-[*] local dat acenter name
+[*] local data center name
 [ ] keyspace name
 
 >>When we use execute to send a query to Cassandra, a _______ is returned<<

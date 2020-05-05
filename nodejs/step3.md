@@ -23,6 +23,6 @@ const params = [ 'Caesar', 'Julius', 'julius@example.com' ];
 client.execute(insert, params, { prepare : true });
 ```{{execute}}
 
-
+</br>
 
 ## Up next, we will run a SELECT query to get our user back out!

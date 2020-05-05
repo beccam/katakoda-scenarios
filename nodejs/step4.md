@@ -16,4 +16,6 @@ Execution methods in the driver return a `Promise`, you can await on the promise
 
 The promise is fulfilled when the data is retrieved.
 
+</br>
+
 ## Great! You've just learned how to SELECT and print out a row. Let's move on to learning how to perform an UPDATE.       

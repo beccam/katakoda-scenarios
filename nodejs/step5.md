@@ -24,7 +24,8 @@ You may have notice the `prepare` flag as part of the `queryOptions` in our stat
 
 Using prepared statements provides multiple benefits. Prepared statements are parsed and prepared on the Cassandra nodes and are ready for future execution. Also, the driver retrieves information about the parameter types which allows an **accurate mapping between a JavaScript type and a Cassandra type.**
 
-If you plan to reuse a query within your application (it is generally the case, your parameter value changes but there is only a small number of different queries for a given schema), you can benefit from using prepared statements.
+If you plan to reuse a query within your application (it is generally the case that your parameter value changes, but there is only a small number of different queries for a given schema), you can benefit from using prepared statements.
 
+</br>
 
 ## You're almost there! Coming up, how to DELETE a row from a table

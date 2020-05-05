@@ -6,4 +6,6 @@ Wait for Cassandra to finish starting up, this shouldn't take long! When it is f
 
 `node`{{execute}}
 
+</br>
+
 ## Now that the REPL is running, let's configure our connection to the instance.
