@@ -1,4 +1,14 @@
-Using `session.execute()`, we will retrieve our user we just inserted back out of the table. Since there is only one user in the database with lastname "Jones", we can use the `one()` method to return a single row of the results. Then we will print out the name and age of our user.
+Using `session.execute()`, we will retrieve our user we just inserted back out of the table. Since there is only one user in the database with lastname "Jones", we can use the `one()` method to return a single row of the results. Then we will print out the `firstname` and `email` of our user.
+
+<summary style="color:teal">Example:</summary>
+<div style="background: #eeeedd; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">result = session.execute(<span style="color: #CD5555">&quot;&quot;&quot;</span>
+<span style="color: #CD5555">    SELECT * FROM demo.users WHERE lastname = %s</span>
+<span style="color: #CD5555">    &quot;&quot;&quot;</span>,
+    [<span style="color: #CD5555">&quot;Brutus&quot;</span>]).one()
+<span style="color: #8B008B; font-weight: bold">print</span>(result.firstname, result.email)
+</pre></div>
+
+Go ahead and execute this code in the interpreter that will select our user back out:
 
 ```
 result = session.execute("""
@@ -27,5 +37,7 @@ for row in rows:
 ```     
 </p>
 ---
+
+</br>
 
 ## Great! You've just learned how to SELECT and print out a row. Let's move on to learning how to perform an UPDATE.

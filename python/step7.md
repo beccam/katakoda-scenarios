@@ -11,4 +11,6 @@ Exit the Python interpreter:
 
 `exit()`{{execute}}
 
+</br>
+
 ## Awesome! Now you know how to perform basic CRUD operations with the DataStax Python Driver for Apache Cassandra™.

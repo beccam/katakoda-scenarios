@@ -19,4 +19,6 @@ result = session.execute("""
 print(result.firstname, result.email)
 ``` {{execute}}
 
+</br>
+
 ## You're almost there! Coming up, how to DELETE a row from a table.
