@@ -2,8 +2,8 @@ Next, will execute a SELECT SimpleStatements. Using the `session.execute()` and 
 
 For this step, we will execute code that that:
  * Selects for the user we just inserted
- * Return the first row from the result set
- * Print out the first and email address of the user
+ * Returns the first row from the result set
+ * Prints out the first and email address of the user
 
 <summary style="color:teal">Example:</summary>
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #999988; font-style: italic">// Select for the user</span>

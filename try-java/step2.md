@@ -1,4 +1,4 @@
-Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to insert a user into that `users` table. The keyspace and table that we have already created.
+Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to insert a user into that `users` table. The keyspace and table that we have already created in the last step.
 
 <pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">CREATE</span> <span style="color: #0000aa">TABLE</span> demo.users (
     lastname <span style="color: #00aaaa">text</span> <span style="color: #0000aa">PRIMARY</span> <span style="color: #0000aa">KEY</span>,

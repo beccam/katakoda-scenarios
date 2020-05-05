@@ -1,4 +1,4 @@
-Say our user has a wants to change their email. We will execute an UPDATE statement to update the user's email address. As usual, we do this through the `session.execute()` method.
+Say our user has a wants to change their email. We will execute an UPDATE statement to change the user's email address. As usual, we do this through the `session.execute()` method.
 
 <summary style="color:teal">Example:</summary>
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">session<span style="font-weight: bold">.</span><span style="color: #008080">execute</span><span style="font-weight: bold">(</span>
