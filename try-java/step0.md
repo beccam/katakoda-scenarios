@@ -29,4 +29,4 @@ import com.datastax.oss.driver.api.core.cql.*;
 
 </br>
 
-## Now Apache Cassandra is running ,let's configure our connection to the instance.
+## Now that Apache Cassandra is running, let's configure our connection to the instance.

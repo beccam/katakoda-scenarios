@@ -1,4 +1,4 @@
-Before we start executing any queries against a Cassandra database, we need to setup an instance of *CqlSession*. *CqlSession* is the main entry point of the driver. It holds the known state of the actual Cassandra cluster, and is what you use to execute queries.
+Before we start executing any queries against a Cassandra database, we need to setup an instance of `CqlSession`. `CqlSession` is the main entry point of the driver. It holds the known state of the actual Cassandra cluster, and it  is what you use to execute queries.
 
 `CqlSession.builder()` provides a fluent API to create an instance programmatically. With it you can explicitly add contact points, a datacenter name, and a keyspace name for your session to connect to.
 <summary style="color:teal">Example:</summary>
@@ -9,7 +9,7 @@ Before we start executing any queries against a Cassandra database, we need to s
    <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">()</span>
 </pre></div>
 
-In the main method, we use `CqlSession.builder()` to add:
+In the main method, we are going to use `CqlSession.builder()` to add:
 * A contact point and InetSocket(`"127.0.0.1", 9042`)
 * local datacenter name (`"datacenter1"`)
 

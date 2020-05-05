@@ -8,7 +8,7 @@ Say our user has a wants to change their email. We will execute an UPDATE statem
 </pre></div>
 
 
-Run the following query from `jshell`.Notice that we select the row to update by specifying the `lastname`.
+Run the following query from `jshell`. Notice that we select the row to update by specifying the `lastname` and we use the `SET` keyword to specify the new value for `email`.
 
 ```
 {

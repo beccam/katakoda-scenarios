@@ -7,7 +7,7 @@ Finally we will delete our user from the table. We will execute with a `DELETE` 
             <span style="font-weight: bold">.</span><span style="color: #008080">build</span><span style="font-weight: bold">());</span>
 </pre></div>
 
-Let's do this! Run the following statement in `jshell` to delete our user once and for all.
+Let's do this! Run the following statement in `jshell` to delete our user once and for all. We specify the row that we want to delete by providing the primary key, `lastname`.
 
 ```
 {

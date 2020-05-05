@@ -2,7 +2,7 @@
   "title": "Try it Out: DataStax Java Driver for Apache Cassandra™",
   "description": "Learn how to perfrom CRUD operations with the DataStax Java Driver for Apache Cassandra™",
   "difficulty": "Beginner",
-  "time": "5 minutes",
+  "time": "5 - 10 minutes",
   "details": {
     "assets": {
         "host01": [

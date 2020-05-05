@@ -1,4 +1,4 @@
-Now that we have created an instance of *CqlSession* to connect to Cassandra, we are going to insert a user into that `users` table. The keyspace and table that we have already created in the last step.
+Now that we have created an instance of `CqlSession` to connect to Cassandra, we are going to insert a user into that `users` table that we created in the previous step.
 
 <pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">CREATE</span> <span style="color: #0000aa">TABLE</span> demo.users (
     lastname <span style="color: #00aaaa">text</span> <span style="color: #0000aa">PRIMARY</span> <span style="color: #0000aa">KEY</span>,
@@ -27,9 +27,9 @@ session.execute(
 ```{{execute}}
 
 The we add the 3 parameters as Positional Values:
- * `lastname`
- * `firstname`
- * `email`
+ * `lastname` &#8594; `"Caesar"`
+ * `firstname` &#8594; `"Julius"`
+ * `email` &#8594; `"caesar@example.com"`
 
 
 </br>
