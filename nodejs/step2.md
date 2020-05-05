@@ -20,10 +20,9 @@ const client = new cassandra.Client({
   keyspace: 'demo'
 });
 
-client.connect()
-  .then(() => console.log('Connected!'));
+client.connect().then(() => console.log('Connected!'));
 ```{{execute}}
 
-Even though calling `connect()`` is not required (the execute method internally calls to connect), it is recommended you call to `connect()` on application startup. That way you can ensure that you start your application once your are connected to your cluster.
+Even though calling `connect()` is not required (the execute method internally calls to connect), it is recommended you call to `connect()` on application startup. That way you can ensure that you start your application once your are connected to your cluster.
 
 ## Once you have finished configuring your connection to Cassandra, we can move on to inserting a row into a table.    
