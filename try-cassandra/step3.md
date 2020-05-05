@@ -1,3 +1,5 @@
+Let's first select the keyspace we want to use: `USE demo`{{execute}}
+
 Next, let's create a *users* table in your *demo* keyspace.
 
 Run the command `CREATE TABLE demo.users (lastname text PRIMARY KEY, firstname text, email text);`{{execute}}
