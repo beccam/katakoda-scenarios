@@ -1,4 +1,4 @@
-Let's first select the keyspace we want to use: `USE demo`{{execute}}
+Let's first select the keyspace we want to use: `USE demo;`{{execute}}
 
 In a production database, inserting columns and column values programmatically is more practical than using cqlsh, but often, testing queries using this SQL-like shell is very convenient.
 
