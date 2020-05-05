@@ -16,8 +16,7 @@ client.execute(update, [ 'jc@example.com', 'Caesar' ], { prepare : true } );
 Check to see if your update was successful. Run the select statement from the previous step again:
 ```
 const select = 'SELECT firstname, email FROM users WHERE lastname = ?';
-client.execute(select, [ 'Caesar' ], { prepare : true })
-  .then(result => console.log('User with firstname %s and email %s', result.rows[0].firstname, result.rows[0].email))
+client.execute(select, [ 'Caesar' ], { prepare : true }).then(result => console.log('User with firstname %s and email %s', result.rows[0].firstname, result.rows[0].email))
 ```{{execute}}
 
 You may have notice the `prepare` flag as part of the `queryOptions` in our statements.
