@@ -1,4 +1,5 @@
 {
+  "private": true,
   "title": "Try it out: DataStax Python Driver for Apache Cassandra™",
   "description": "Learn how to perfrom CRUD operations with the DataStax Python Driver for Apache Cassandra™",
   "difficulty": "Beginner",
@@ -38,10 +39,6 @@
       {
         "title": "Delete a user",
         "text": "step7.md"
-      },
-      {
-        "title": "Quiz",
-        "text": "step8.md"
       }
     ],
     "intro": {

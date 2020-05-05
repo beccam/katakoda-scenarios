@@ -10,7 +10,7 @@ Now that we have a `Session` and we have created our keyspace and table, we can 
 )
 </pre></div>
 
-The driver supports two forms of parameter place-holders: positional and named.
+The driver supports two forms of parameter placeholders: positional and named.
 Positional parameters are used with a `%s` placeholder. Go ahead and execute the following to insert a user:
 
 ```
