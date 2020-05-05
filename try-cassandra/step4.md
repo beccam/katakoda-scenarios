@@ -4,7 +4,7 @@ In a production database, inserting columns and column values programmatically i
 
 | lastname             | firstname | email |          
 | :---:                 | :---:   | :---:        |
-| <span style="background-color:#ffcc66">Round</span>   | <span style"background-color:#ffff99">Craig</span>  |<span style="background-color:#00ff99">craig@example.com</span>    |
+| <span style="background-color:#ffcc66">Round</span>   | <span style="background-color:#ffff99">Craig</span>  |<span style="background-color:#00ff99">craig@example.com</span>    |
 | <span style="background-color:#ffcc66">Pratico</span>   | <span style="background-color:#ffff99">Cassi</span>   |<span style="background-color:#00ff99">cassi@example.com</span>     |  
 | <span style="background-color:#ffcc66">Polson</span>   | <span style="background-color:#ffff99">Lino</span>  |<span style="background-color:#00ff99">lino@example.com</span>    |   
 
