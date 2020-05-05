@@ -18,7 +18,7 @@ Review the dependencies with `cat pom.xml` if you wish, otherwise let's get on w
 
 To make things easy, we will be using `jshell`. The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. Let's start `jshell` from the project directory.
 
-`mvn -q com.github.johnpoth:jshell-maven-plugin:1.3:run`{{execute}}
+`jshell`{{execute}}
 
 Once `jshell` is running, we are going to need to import the `CqlSession` class to connect to the cluster, as well as the `cql` package:
 
